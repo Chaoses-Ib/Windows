@@ -106,6 +106,7 @@
   - [Tooltip](UI/GUI/Controls/Tooltip.md)
 
 ### [Shell](UI/Shell/README.md)
+- [Object Verbs](UI/Shell/Verbs/README.typ)
 - [Context Menus](UI/Shell/Menus/README.md)
 - [Icons](UI/Shell/Icons/README.md)
 - [Taskbar](UI/Shell/Taskbar/README.md)
