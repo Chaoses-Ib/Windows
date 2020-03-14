@@ -79,6 +79,9 @@
 - [Desktops](UI/GUI/Desktops/README.md)
   - [Remote](UI/GUI/Desktops/Remote.md)
 - [Windows](UI/GUI/Windows/README.md)
+  - [Window Types](UI/GUI/Windows/Types/README.md)
+    - [Child Windows](UI/GUI/Windows/Types/Child.md)
+    - [Layered Windows](UI/GUI/Windows/Types/Layered.md)
   - [Foreground Windows](UI/GUI/Windows/Foreground.md)
 - Messages
   - [Message Queues](UI/GUI/Messages/Queues.md)
