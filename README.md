@@ -82,7 +82,8 @@
   - [Window Types](UI/GUI/Windows/Types/README.md)
     - [Child Windows](UI/GUI/Windows/Types/Child.md)
     - [Layered Windows](UI/GUI/Windows/Types/Layered.md)
-  - [Foreground Windows](UI/GUI/Windows/Foreground.md)
+  - [Window Relationships](UI/GUI/Windows/Relationships/README.md)
+    - [Foreground Windows](UI/GUI/Windows/Relationships/Foreground.md)
 - Messages
   - [Message Queues](UI/GUI/Messages/Queues.md)
 - [Common Controls](UI/GUI/Controls/README.md)

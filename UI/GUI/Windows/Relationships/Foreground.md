@@ -1,5 +1,17 @@
 # Foreground Windows
+Foreground windows, 前景窗口
+
 Each process can have multiple threads of execution, and each thread can create windows. The thread that created the window with which the user is currently working is called the foreground thread, and the window is called the **foreground window**. All other threads are background threads, and the windows created by background threads are called **background windows**.
+
+[winapi - Foreground Vs Active window - Stack Overflow](https://stackoverflow.com/questions/3940346/foreground-vs-active-window)
+
+[SetForegroundWindow function (winuser.h) - Win32 apps | Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setforegroundwindow)  
+[AllowSetForegroundWindow function (winuser.h) - Win32 apps | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-allowsetforegroundwindow)
+
+[SetForegroundWindow、SetActiveWindow、SetFocus 如何将一个某个窗口提到最顶层\_运维\_p312011150的博客 - CSDN 博客](https://blog.csdn.net/p312011150/article/details/82909861)
+
+[LockSetForegroundWindow function (winuser.h) - Win32 apps | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-locksetforegroundwindow)  
+`SPI_GETFOREGROUNDLOCKTIMEOUT`
 
 ## Implementation
 ```cpp
@@ -135,7 +147,7 @@ NtUserSetForegroundWindow(hwnd) {
     glinp.ptiLastWoken = ptiT
   ```
 
-  由于前景窗口的焦点只会影响键盘输入，因此可以通过模拟鼠标输入的方式来间接设置前景窗口，但一方面模拟的鼠标输入可能产生难以预料的影响，另一方面窗口也可能被部分或完全遮挡，即使设置窗口为 topmost，也存在被同样 topmost 的前景窗口以及其它 [z-order band](Windows.md#z-order-bands) 的窗口遮挡的可能性。
+  由于前景窗口的焦点只会影响键盘输入，因此可以通过模拟鼠标输入的方式来间接设置前景窗口，但一方面模拟的鼠标输入可能产生难以预料的影响，另一方面窗口也可能被部分或完全遮挡，即使设置窗口为 topmost，也存在被同样 topmost 的前景窗口以及其它 [z-order band](README.md#z-order-bands) 的窗口遮挡的可能性。
 - xxxButtonEvent()
 - xxxKeyEvent()
   ```cpp
