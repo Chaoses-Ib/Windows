@@ -82,6 +82,8 @@
   - [Window Types](UI/GUI/Windows/Types/README.md)
     - [Child Windows](UI/GUI/Windows/Types/Child.md)
     - [Layered Windows](UI/GUI/Windows/Types/Layered.md)
+  - [Window Classes](UI/GUI/Windows/Classes/README.md)
+    - [Class Styles](UI/GUI/Windows/Classes/Styles.md)
   - [Window Relationships](UI/GUI/Windows/Relationships/README.md)
     - [Foreground Windows](UI/GUI/Windows/Relationships/Foreground.md)
 - Messages
