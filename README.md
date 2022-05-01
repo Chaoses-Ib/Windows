@@ -43,6 +43,10 @@
 - [Services](Kernel/Services/README.md)
 - [→Networks](<https://github.com/Chaoses-Ib/Networks/tree/main?tab=readme-ov-file#os:~:text=OS-,Windows,-Windows%20Sockets%20(Winsock>)
 
+### [Virtualization](Kernel/Virtualization/README.md)
+- [→Hyper-V](https://github.com/Chaoses-Ib/ComputerHardware/blob/main/Virtualization/Native/Hyper-V/README.md)
+- [Sandboxie](Kernel/Virtualization/Sandboxie.md)
+
 ## [Subsystems](Subsystems/README.md)
 - [Ntdll.dll](Subsystems/Ntdll.dll.md)
 - [Wine](Subsystems/Wine/README.md)
