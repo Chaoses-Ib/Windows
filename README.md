@@ -5,3 +5,7 @@
 
 ### [Security](Kernel/Security/README.md)
 - [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
+
+## Applications
+### Management
+- [Package Formats](Applications/Management/Package%20Formats.md)
