@@ -4,3 +4,6 @@
 
 ## [Security](Security/README.md)
 - [Virtualization-Based Security](Security/Virtualization-Based%20Security.md)
+
+## Configuration
+### [Registry](Configuration/Registry/README.md)
