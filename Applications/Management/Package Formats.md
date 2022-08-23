@@ -1,10 +1,11 @@
 # Package Formats
-1. Archives
-2. [MSI (Windows Installer)](#msi-windows-installer)
-3. [ClickOnce](#clickonce)
-4. [App-V](https://en.wikipedia.org/wiki/Microsoft_App-V)
-5. [AppX](https://en.wikipedia.org/wiki/Universal_Windows_Platform_apps#APPX)
-6. [MSIX](#msix)
+1. Single-file executables
+2. Archives
+3. [MSI (Windows Installer)](#msi-windows-installer)
+4. [ClickOnce](#clickonce)
+5. [App-V](https://en.wikipedia.org/wiki/Microsoft_App-V)
+6. [AppX](https://en.wikipedia.org/wiki/Universal_Windows_Platform_apps#APPX)
+7. [MSIX](#msix)
 
 ## MSI (Windows Installer)
 [Windows Installer](https://docs.microsoft.com/en-us/windows/win32/msi/windows-installer-portal)
