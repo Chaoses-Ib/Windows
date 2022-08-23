@@ -10,5 +10,8 @@
 #### [Registry](Kernel/Configuration/Registry/README.md)
 
 ## Applications
+### [API](Applications/API/README.md)
+#### [COM](Applications/API/COM/README.md)
+
 ### Management
 - [Package Formats](Applications/Management/Package%20Formats.md)
