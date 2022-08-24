@@ -9,6 +9,9 @@
 ### Configuration
 #### [Registry](Kernel/Configuration/Registry/README.md)
 
+## User Interfaces
+### [Shell](User%20Interfaces/Shell/README.md)
+
 ## Applications
 ### [API](Applications/API/README.md)
 #### [COM](Applications/API/COM/README.md)
