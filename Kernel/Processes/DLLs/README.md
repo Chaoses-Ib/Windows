@@ -7,6 +7,7 @@ Approaches[^inject-wiki]:
   DLLs listed under the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\AppCertDLLs` are loaded into every process that calls the Win32 API functions `CreateProcess`, `CreateProcessAsUser`, `CreateProcessWithLogonW`, `CreateProcessWithTokenW` and `WinExec`. DLL must be signed by a valid certificate. That is the right way to use legal DLL injection on current version of Windows - Windows 10.
 - Windows hooks
 - DLL hijacking
+- [COM hijacking](../../../Applications/API/COM/README.md#hijacking)
 - CreateRemoteThread()
 - SetThreadContext()
 - [APCs](../../Traps/Asynchronous%20Procedure%20Calls.md)
