@@ -4,13 +4,17 @@
 - [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
 
 ### [Processes](Kernel/Processes/README.md)
-#### [DLLs](Kernel/Processes/DLLs/README.md)
+- [DLLs](Kernel/Processes/DLLs/README.md)
 
 ### [Security](Kernel/Security/README.md)
 - [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
 
 ### Configuration
-#### [Registry](Kernel/Configuration/Registry/README.md)
+- [Registry](Kernel/Configuration/Registry/README.md)
+
+## Subsystems
+### Windows Subsystem for Linux 2
+- [Networks](Subsystems/WSL%202/Networks.md)
 
 ## Media
 ### Graphics
