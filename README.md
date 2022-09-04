@@ -30,6 +30,7 @@
 
 ### Management
 - [Package Formats](Applications/Management/Package%20Formats.md)
+- [Package Managers](Applications/Management/Package%20Managers.md)
 
 ## Information sources
 Blogs:
