@@ -21,6 +21,9 @@
 #### [DirectX](Media/Graphics/DirectX/README.md)
 
 ## User Interfaces
+### CLI
+- [Sleeping](User%20Interfaces/CLI/Sleeping.md)
+
 ### [Shell](User%20Interfaces/Shell/README.md)
 - [Windows Search](User%20Interfaces/Shell/Windows%20Search.md)
 
