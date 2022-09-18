@@ -1,12 +1,12 @@
 # Windows
-## [Kernel](Kernel/README.md)
-### [Traps](Kernel/Traps/README.md)
+## Kernel
+### Traps
 - [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
 
 ### [Processes](Kernel/Processes/README.md)
-- [DLLs](Kernel/Processes/DLLs/README.md)
+- [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
 
-### [Security](Kernel/Security/README.md)
+### Security
 - [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
 
 ### Configuration
@@ -18,7 +18,7 @@
 
 ## Media
 ### Graphics
-#### [DirectX](Media/Graphics/DirectX/README.md)
+- [DirectX](Media/Graphics/DirectX/README.md)
 
 ## User Interfaces
 ### CLI
@@ -28,8 +28,8 @@
 - [Windows Search](User%20Interfaces/Shell/Windows%20Search.md)
 
 ## Applications
-### [API](Applications/API/README.md)
-#### [COM](Applications/API/COM/README.md)
+### Application Programming Interface
+- [Component Object Model](Applications/API/COM/README.md)
 
 ### Management
 - [Package Formats](Applications/Management/Package%20Formats.md)
