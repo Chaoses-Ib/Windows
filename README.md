@@ -12,6 +12,8 @@
 ### Configuration
 - [Registry](Kernel/Configuration/Registry/README.md)
 
+### [Drivers](Kernel/Drivers/README.md)
+
 ## Subsystems
 ### Windows Subsystem for Linux 2
 - [Networks](Subsystems/WSL%202/Networks.md)
