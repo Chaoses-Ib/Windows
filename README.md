@@ -16,6 +16,7 @@
 
 ## [Subsystems](Subsystems/README.md)
 ### [Windows](Subsystems/Windows/README.md)
+- [Windows 32-bit on Windows 64-bit (WoW64)](Subsystems/Windows/WoW64.md)
 
 ### Windows Subsystem for Linux 2
 - [Networks](Subsystems/WSL%202/Networks.md)
