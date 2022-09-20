@@ -14,7 +14,9 @@
 
 ### [Drivers](Kernel/Drivers/README.md)
 
-## Subsystems
+## [Subsystems](Subsystems/README.md)
+### [Windows](Subsystems/Windows/README.md)
+
 ### Windows Subsystem for Linux 2
 - [Networks](Subsystems/WSL%202/Networks.md)
 
@@ -38,6 +40,9 @@
 - [Package Managers](Applications/Management/Package%20Managers.md)
 
 ## Information sources
+Books:
+- Windows Internals
+
 Blogs:
 - [Windows Developer Blog](https://blogs.windows.com/windowsdeveloper/)
 - [DevBlogs - Microsoft Developer Blogs](https://devblogs.microsoft.com/)
