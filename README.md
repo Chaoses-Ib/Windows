@@ -15,6 +15,8 @@
 ### [Drivers](Kernel/Drivers/README.md)
 
 ## [Subsystems](Subsystems/README.md)
+- [Ntdll.dll](Subsystems/Ntdll.dll.md)
+
 ### [Windows](Subsystems/Windows/README.md)
 - [Windows 32-bit on Windows 64-bit (WoW64)](Subsystems/Windows/WoW64.md)
 

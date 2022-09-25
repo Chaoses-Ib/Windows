@@ -7,8 +7,8 @@
 - POSIX (last shipeed with Windows XP)
 - OS/2 (last shipped with Windows 2000)
 
-## Ntdll.dll
-Ntdll.dll is a special system support library primarily for the use of subsystem DLLs and native applications. (*Native* in this context refers to images that are not tied to any particular subsystem.) It contains two types of functions:[^winter]
+## [Ntdll.dll](Ntdll.dll.md)
+**Ntdll.dll** is a special system support library primarily for the use of subsystem DLLs and native applications. (*Native* in this context refers to images that are not tied to any particular subsystem.) It contains two types of functions:[^winter]
 - System service dispatch stubs to Windows executive system services
 - Internal support functions used by subsystems, subsystem DLLs, and other native images
   - The image loader (functions that start with `Ldr`)
@@ -25,7 +25,7 @@ The traditional subsystem model, while extensible and clearly powerful enough to
 - Because subsystem information is extracted from the Portable Executable (PE) header, it requires the source code of the original binary to rebuild it as a Windows PE executable file (.exe). This will also change any POSIX-style dependencies and system calls into Windows-style imports of the `Psxdll.dll` library.
 -  It is limited by the functionality provided either by the Win32 subsystem (on which it sometimes piggybacks) or the NT kernel. Therefore, the subsystem wraps, instead of emulates, the behavior required by the POSIX application. This can sometimes lead to subtle compatibility flaws.
 
-Luckily, the Drawbridge project from Microsoft Research provided the perfect vehicle for an updated take on subsystems. It resulted in the implementation of the Pico model. Under this model, the idea of a Pico provider is defined, which is a custom kernel-mode driver that receives access to specialized kernel interfaces through the `PsRegisterPicoProvider` API. The benefits of these specialized interfaces are two-fold:
+Luckily, the Drawbridge project from Microsoft Research provided the perfect vehicle for an updated take on subsystems. It resulted in the implementation of the **Pico model**. Under this model, the idea of a Pico provider is defined, which is a custom kernel-mode driver that receives access to specialized kernel interfaces through the `PsRegisterPicoProvider` API. The benefits of these specialized interfaces are two-fold:
 - They allow the provider to create Pico processes and threads while customizing their execution contexts, segments, and store data in their respective `EPROCESS` and `ETHREAD` structures
 - They allow the provider to receive a rich set of notifications whenever such processes or threads engage in certain system actions such as system calls, exceptions, APCs, page faults, termination, context changes, suspension/resume, etc.
 
