@@ -1,0 +1,233 @@
+# [Windows.h](https://learn.microsoft.com/en-us/windows/win32/api/winbase/)
+## Dependency tree
+10.0.22000.0\um\Windows.h:
+- shared\winapifamily.h
+  - shared\winpackagefamily.h
+- shared\sdkddkver.h
+- MSVC\excpt.h
+  - MSVC\vcruntime.h
+    - MSVC\sal.h
+      - MSVC\concurrencysal.h
+    - MSVC\vadefs.h
+- MSVC\stdarg.h
+- shared\windef.h
+  - shared\minwindef.h
+    - shared\specstrings.h
+      - shared\specstrings_strict.h
+        - shared\specstrings_undef.h
+      - shared\driverspecs.h
+        - shared\sdv_driverspecs.h
+    - um\winnt.h
+      - ucrt\ctype.h
+        - ucrt\corecrt.h
+        - ucrt\corecrt_wctype.h
+      - shared\kernelspecs.h
+      - shared\basetsd.h
+      - shared\guiddef.h
+        - ucrt\string.h
+          - ucrt\corecrt_memory.h
+            - ucrt\corecrt_memcpy_s.h
+              - ucrt\errno.h
+              - MSVC\vcruntime_string.h
+          - ucrt\corecrt_wstring.h
+      - shared\pshpack4.h
+      - shared\poppack.h
+      - shared\pshpack4.h
+      - shared\poppack.h
+      - shared\pshpack4.h
+      - shared\pshpack2.h
+      - shared\poppack.h
+      - shared\pshpack2.h
+      - shared\pshpack2.h
+      - shared\poppack.h
+      - shared\poppack.h
+      - shared\pshpack8.h
+      - shared\poppack.h
+      - shared\pshpack1.h
+      - shared\poppack.h
+      - shared\pshpack1.h
+      - shared\poppack.h
+      - shared\poppack.h
+      - shared\apiset.h
+      - shared\ktmtypes.h
+- um\winbase.h
+  - shared\apisetcconv.h
+  - um\minwinbase.h
+  - um\apiquery2.h
+  - um\processenv.h
+  - um\fileapifromapp.h
+    - um\fileapi.h
+  - um\debugapi.h
+  - um\utilapiset.h
+  - um\handleapi.h
+  - um\errhandlingapi.h
+  - um\fibersapi.h
+  - um\namedpipeapi.h
+  - um\profileapi.h
+  - um\heapapi.h
+  - um\ioapiset.h
+  - um\synchapi.h
+  - um\interlockedapi.h
+  - um\processthreadsapi.h
+  - um\sysinfoapi.h
+  - um\memoryapi.h
+  - um\enclaveapi.h
+  - um\threadpoollegacyapiset.h
+  - um\threadpoolapiset.h
+  - um\jobapi.h
+  - um\jobapi2.h
+  - um\wow64apiset.h
+  - um\libloaderapi.h
+  - um\securitybaseapi.h
+  - um\namespaceapi.h
+  - um\systemtopologyapi.h
+  - um\processtopologyapi.h
+  - um\securityappcontainer.h
+  - um\realtimeapiset.h
+  - shared\winerror.h
+  - um\timezoneapi.h
+- um\wingdi.h
+  - shared\pshpack1.h
+  - shared\poppack.h
+  - shared\pshpack2.h
+  - shared\poppack.h
+  - shared\pshpack2.h
+  - shared\poppack.h
+  - shared\pshpack4.h
+  - shared\poppack.h
+  - shared\pshpack4.h
+  - shared\poppack.h
+- um\winuser.h
+  - shared\pshpack2.h
+  - shared\poppack.h
+  - shared\tvout.h
+- um\winnls.h
+  - um\datetimeapi.h
+  - um\stringapiset.h
+    - um\winnls.h
+- um\wincon.h
+  - um\wincontypes.h
+  - um\consoleapi.h
+  - um\consoleapi2.h
+  - um\consoleapi3.h
+- um\winver.h
+  - um\verrsrc.h
+- um\winreg.h
+  - um\reason.h
+- um\winnetwk.h
+  - shared\wnnc.h
+- shared\cderr.h
+- um\dde.h
+- um\ddeml.h
+- um\dlgs.h
+- um\lzexpand.h
+- um\mmsystem.h
+  - um\mmsyscom.h
+    - shared\pshpack1.h
+    - shared\poppack.h
+  - shared\pshpack1.h
+  - um\mciapi.h
+    - um\mmsyscom.h
+  - um\mmiscapi.h
+    - um\mmsyscom.h
+  - um\mmiscapi2.h
+    - um\mmsyscom.h
+  - um\playsoundapi.h
+    - um\mmsyscom.h
+  - um\mmeapi.h
+    - um\mmsyscom.h
+  - um\timeapi.h
+    - um\mmsyscom.h
+  - um\joystickapi.h
+    - um\mmsyscom.h
+  - shared\poppack.h
+- um\nb30.h
+- shared\rpc.h
+  - shared\pshpack8.h
+  - shared\rpcdce.h
+    - shared\rpcdcep.h
+  - um\rpcnsi.h
+  - shared\rpcnterr.h
+  - shared\rpcasync.h
+    - shared\pshpack8.h
+    - shared\poppack.h
+  - shared\poppack.h
+- um\shellapi.h
+- um\winperf.h
+  - shared\pshpack8.h
+  - shared\poppack.h
+- um\winsock.h
+  - shared\inaddr.h
+- um\wincrypt.h
+  - shared\bcrypt.h
+  - um\ncrypt.h
+  - um\dpapi.h
+- um\winefs.h
+- um\winscard.h
+  - shared\wtypes.h
+    - shared\rpcndr.h
+      - shared\pshpack8.h
+      - um\rpcnsip.h
+      - shared\rpcsal.h
+      - shared\poppack.h
+    - shared\wtypesbase.h
+      - shared\guiddef.h
+  - um\winioctl.h
+    - shared\pshpack1.h
+    - shared\poppack.h
+    - shared\pshpack1.h
+    - shared\poppack.h
+    - shared\pshpack1.h
+    - shared\poppack.h
+    - shared\pshpack1.h
+    - shared\poppack.h
+    - shared\pshpack1.h
+    - shared\poppack.h
+    - shared\pshpack1.h
+    - shared\poppack.h
+    - shared\pshpack1.h
+    - shared\poppack.h
+  - shared\winsmcrd.h
+- um\winspool.h
+  - um\prsht.h
+    - shared\pshpack8.h
+    - shared\poppack.h
+- um\ole2.h
+  - shared\pshpack8.h
+  - um\objbase.h
+    - shared\pshpack8.h
+    - um\combaseapi.h
+      - shared\pshpack8.h
+      - ucrt\stdlib.h
+        - ucrt\corecrt_malloc.h
+        - ucrt\corecrt_search.h
+          - ucrt\stddef.h
+        - ucrt\corecrt_wstdlib.h
+        - MSVC\limits.h
+      - um\unknwnbase.h
+      - um\objidlbase.h
+      - shared\guiddef.h
+      - um\cguid.h
+      - shared\poppack.h
+    - um\coml2api.h
+      - um\objidl.h
+        - um\unknwn.h
+      - um\propidlbase.h
+        - um\oaidl.h
+    - um\urlmon.h
+      - um\oleidl.h
+      - um\servprov.h
+      - um\msxml.h
+    - um\propidl.h
+    - shared\poppack.h
+  - um\oleauto.h
+    - shared\pshpack8.h
+    - shared\poppack.h
+  - shared\poppack.h
+- um\commdlg.h
+  - um\prsht.h
+- shared\stralign.h
+- um\winsvc.h
+- um\mcx.h
+- um\imm.h
+  - um\ime_cmodes.h
