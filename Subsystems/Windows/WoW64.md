@@ -28,6 +28,8 @@ CPU simulators are architecture-specific and are used for translating machine co
 Version | Build number | kernel32.dll | advapi32.dll | user32.dll | gdi32.dll | shlwapi.dll
 --- | --- | --- | --- | --- | --- | ---
 Windows 11 22H2 | 22621 | ✅ | ✅ | ❌ | ❌ | ✅
+Windows 10 21H2 | 19044 | ✅ | ✅ | ✅ | ✅ | ✅
+Windows 10 21H1 | 19043 | ✅ | ✅ | ✅ | ✅ | ✅
 Windows 10 20H2 | 19042 | ✔️NtFreeVirtualMemory | ✔️ | ✔️ | ✔️ | ✔️
 Windows 7 | 7601 | ✔️NtFreeVirtualMemory | ✔️ | ✔️ | ✔️ | ✔️
 
