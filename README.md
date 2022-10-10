@@ -8,6 +8,7 @@
 
 ### [Security](Kernel/Security/README.md)
 - [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
+- [User Interface Privilege Isolation](Kernel/Security/UIPI.md)
 
 ### Configuration
 - [Registry](Kernel/Configuration/Registry/README.md)
