@@ -6,7 +6,7 @@
 ### [Processes](Kernel/Processes/README.md)
 - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
 
-### Security
+### [Security](Kernel/Security/README.md)
 - [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
 
 ### Configuration

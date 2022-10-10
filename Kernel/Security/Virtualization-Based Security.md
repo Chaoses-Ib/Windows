@@ -1,5 +1,5 @@
 # Virtualization-Based Security
-![](images/VBS.png)[^internals]
+![](images/VBS.png)[^winter]
 - [I/O memory management unit](https://en.wikipedia.org/wiki/Input%E2%80%93output_memory_management_unit)
 - [Second Level Address Translation](https://en.wikipedia.org/wiki/Second_Level_Address_Translation)
 - Secure boot
@@ -13,9 +13,9 @@
 - Isolated user mode (`Iumdll.dll` and `Iumbase.dll`, the VTL 1 version of `Ntdll.dll` and `Kernelbase.dll`)
   - Trustlets
 
-[^internals]: *Windows Internals*
-
 ## Credential Guard
+Credential Guard (LSAIso.exe) is used by Lsass (if so configured on supported Windows 10 and Server 2016 systems) to store users’ token hashes instead of keeping them in Lsass’s memory. Because Lsaiso.exe is a Trustlet (Isolated User Mode process) running in VTL 1, no normal process - not even the normal kernel - can access the address space of this process. Lsass itself stores an encrypted blob of the password hash needed when it communicates with Lsaiso (via ALPC).[^winter]
+
 Credentials:
 - Password
 - NT one-way function (used by the NT LAN Manager protocol)
@@ -60,6 +60,8 @@ mountvol X: /d
 However, while `bcdedit /bootsequence` works, `bcdedit /default` does not, which means we can only disable VBS for the next boot. A workaround is to use Task Manager to run `bcdedit.exe /bootsequence {0cb3b571-2f2e-4343-a879-d86a476d7215}` after every boot.
 
 At boot you should see the "Virtualization Based Security Opt-out Tool" asking you whether to disable VBS. Press Win or F3 to continue and reboot to the real system.
+
+[^winter]: *Windows Internals*
 
 [^disable-ms-qa]: [Disable Virtualization-Based Security Without Disabling Hyper-V - Microsoft Q&A](https://docs.microsoft.com/en-us/answers/questions/245071/disable-virtualization-based-security-without-disb.html)
 [^disable-su]: [hyper v - Windows 10: Permanently disable VBS (Virtualization-based security)? - Super User](https://superuser.com/questions/1489224/windows-10-permanently-disable-vbs-virtualization-based-security)
