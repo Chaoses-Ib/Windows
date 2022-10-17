@@ -30,6 +30,7 @@
 - [Drivers](Kernel/Drivers/README.md)
 - Devices
   - [Time](Kernel/Devices/Time/README.md)
+- [Services](Kernel/Services/README.md)
 - [→Networks](<https://github.com/Chaoses-Ib/Networks/tree/main?tab=readme-ov-file#os:~:text=OS-,Windows,-Windows%20Sockets%20(Winsock>)
 
 ## [Subsystems](Subsystems/README.md)
