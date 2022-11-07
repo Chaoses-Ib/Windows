@@ -43,6 +43,7 @@
 ### Management
 - [Package Formats](Applications/Management/Package%20Formats.md)
 - [Package Managers](Applications/Management/Package%20Managers.md)
+- [Application Data](Applications/Management/Data.md)
 
 ## Information sources
 Books:
