@@ -33,6 +33,12 @@
 ### CLI
 - [Sleeping](User%20Interfaces/CLI/Sleeping.md)
 
+### GUI
+- [Windows](User%20Interfaces/GUI/Windows.md)
+  - [Foreground Window](User%20Interfaces/GUI/Foreground%20Window.md)
+- [Message Queue](User%20Interfaces/GUI/Message%20Queue.md)
+- [SendInput](User%20Interfaces/GUI/SendInput.md)
+
 ### [Shell](User%20Interfaces/Shell/README.md)
 - [Windows Search](User%20Interfaces/Shell/Windows%20Search.md)
 
