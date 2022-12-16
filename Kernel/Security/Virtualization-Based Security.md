@@ -1,4 +1,8 @@
 # Virtualization-Based Security
+在 Windows 10 中，微软利用 Hyper-V 虚拟化技术实现了**基于虚拟化的安全（Virtualization-Based Security，下称 VBS）**。在开启 VBS 时，系统会被划分为两个**虚拟信任级别（Virtual Trust Levels，下称 VTL）**：VTL 0 和 VTL 1。原本的 Windows 内核运行在权限受限的 VTL 0 中，而新的“安全内核”（Secure Kernel）则运行在权限不受限制的 VTL 1 中。这使得即使 Windows 内核和加载的相关驱动中存在漏洞，攻击者也无法获得系统的最高权限，因此也无法破坏掉安全内核中的安全组件。
+
+安全内核中的安全组件有 Device Guard 和 Credential Guard，前者包括基于虚拟机的代码完整性（Hypervisor-based Code Integrity，HVCI）和内核代码完整性（Kernel-Mode Code Integrity，KMCI）；后者主要包括隔离本地安全认证（Isolated LSA）。“内核隔离”实际上就是 VBS的另一种称呼，而“内存完整性”则是 HVCI 的另一种称呼。
+
 ![](images/VBS.png)[^winter]
 - [I/O memory management unit](https://en.wikipedia.org/wiki/Input%E2%80%93output_memory_management_unit)
 - [Second Level Address Translation](https://en.wikipedia.org/wiki/Second_Level_Address_Translation)
