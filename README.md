@@ -43,7 +43,7 @@
 - [Windows Search](User%20Interfaces/Shell/Windows%20Search.md)
 
 ## Applications
-### Application Programming Interface
+### [API](Applications/API/README.md)
 - [Component Object Model](Applications/API/COM/README.md)
 
 ### Management
