@@ -41,6 +41,7 @@
 
 ### [Shell](User%20Interfaces/Shell/README.md)
 - [Windows Search](User%20Interfaces/Shell/Windows%20Search.md)
+- [Deployment](User%20Interfaces/Shell/Deployment.md)
 
 ## Applications
 ### [API](Applications/API/README.md)
