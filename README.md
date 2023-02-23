@@ -6,6 +6,9 @@
 ### [Processes](Kernel/Processes/README.md)
 - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
 
+### Diagnostics
+- [Event Tracing for Windows](Kernel/Diagnostics/ETW/README.md)
+
 ### [Security](Kernel/Security/README.md)
 - [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
 - [User Interface Privilege Isolation](Kernel/Security/UIPI.md)
