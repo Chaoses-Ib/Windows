@@ -1,24 +1,18 @@
 # Windows
 ## Kernel
-### Traps
-- [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
-
-### [Processes](Kernel/Processes/README.md)
-- [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
-
-### [Power Management](Kernel/Power/README.md)
-
-### Diagnostics
-- [Event Tracing for Windows](Kernel/Diagnostics/ETW/README.md)
-
-### [Security](Kernel/Security/README.md)
-- [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
-- [User Interface Privilege Isolation](Kernel/Security/UIPI.md)
-
-### Configuration
-- [Registry](Kernel/Configuration/Registry/README.md)
-
-### [Drivers](Kernel/Drivers/README.md)
+- Traps
+  - [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
+- [Processes](Kernel/Processes/README.md)
+  - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
+- [Power Management](Kernel/Power/README.md)
+- Diagnostics
+  - [Event Tracing for Windows](Kernel/Diagnostics/ETW/README.md)
+- [Security](Kernel/Security/README.md)
+  - [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
+  - [User Interface Privilege Isolation](Kernel/Security/UIPI.md)
+- Configuration
+  - [Registry](Kernel/Configuration/Registry/README.md)
+- [Drivers](Kernel/Drivers/README.md)
 
 ## [Subsystems](Subsystems/README.md)
 - [Ntdll.dll](Subsystems/Ntdll.dll.md)
@@ -58,10 +52,13 @@
 - [Application Data](Applications/Management/Data.md)
 
 ## Information sources
-Books:
-- Windows Internals
+<details><summary>Books</summary>
 
-Blogs:
+- Windows Internals
+</details>
+
+<details><summary>Blogs</summary>
+
 - [Windows Developer Blog](https://blogs.windows.com/windowsdeveloper/)
 - [DevBlogs - Microsoft Developer Blogs](https://devblogs.microsoft.com/)
   - [The Old New Thing](https://devblogs.microsoft.com/oldnewthing/)
@@ -69,7 +66,10 @@ Blogs:
   - [Windows Command Line](https://devblogs.microsoft.com/commandline/)
   - [PowerShell Community](https://devblogs.microsoft.com/powershell-community/)  
   - [Scripting Blog - A place to learn about PowerShell and share stories of automation](https://devblogs.microsoft.com/scripting/)
+</details>
 
-News:
+<details><summary>News</summary>
+
 - [r/windows](https://www.reddit.com/r/windows/)
 - [r/WindowsSecurity](https://www.reddit.com/r/WindowsSecurity/)
+</details>
