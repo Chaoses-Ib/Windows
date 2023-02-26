@@ -6,6 +6,8 @@
 ### [Processes](Kernel/Processes/README.md)
 - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
 
+### [Power Management](Kernel/Power/README.md)
+
 ### Diagnostics
 - [Event Tracing for Windows](Kernel/Diagnostics/ETW/README.md)
 
