@@ -23,6 +23,7 @@
 
 ### Windows Subsystem for Linux 2
 - [Networks](Subsystems/WSL%202/Networks.md)
+- [Windows Subsystem for Android](Subsystems/WSL%202/WSA.md)
 
 ## Media
 ### Graphics
