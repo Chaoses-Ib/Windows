@@ -1,4 +1,18 @@
 # API
+1. Win16 (C-style functions)
+2. Microsoft Foundation Class Library
+3. Object Linking and Embedding
+4. [Component Object Model](COM/README.md)
+5. [Win32](Win32/README.md) (C-style functions and COM)
+6. [→.NET](https://github.com/Chaoses-Ib/.NET)
+7. WinFX
+8. [Windows Runtime](WinRT/README.md)
+9. [Windows App SDK](AppSDK/README.md)
+
+![](https://cdn.arstechnica.net/wp-content/uploads/2012/10/winrt.png)
+
+[Turning to the past to power Windows’ future: An in-depth look at WinRT | Ars Technica](https://arstechnica.com/features/2012/10/windows-8-and-winrt-everything-old-is-new-again/)
+
 ## Win32 metadata
 [Making Win32 APIs More Accessible to More Languages - Windows Developer Blog](https://blogs.windows.com/windowsdeveloper/2021/01/21/making-win32-apis-more-accessible-to-more-languages/)
 
@@ -20,6 +34,10 @@ Rust:
   - [windows_sys](https://docs.rs/windows-sys/latest/windows_sys/)
 
   [Getting Started with Rust](https://kennykerr.ca/rust-getting-started/index.html)
+
+  [RAII type for HANDLES? · Issue #2222 · microsoft/windows-rs](https://github.com/microsoft/windows-rs/issues/2222)
+
 - [winapi-rs: Rust bindings to Windows API](https://github.com/retep998/winapi-rs)
 
   [What's the difference between the winapi and windows-sys crates in Rust? : rust](https://www.reddit.com/r/rust/comments/12b6c5u/whats_the_difference_between_the_winapi_and/)
+- [WinSafe: Windows API and GUI in safe, idiomatic Rust.](https://github.com/rodrigocfd/winsafe)

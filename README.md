@@ -1,4 +1,4 @@
-# Windows
+# [Windows](Windows.md)
 ## Kernel
 - Traps
   - [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
@@ -45,32 +45,13 @@
 
 ## Applications
 ### [API](Applications/API/README.md)
+- [Win32](Applications/API/Win32/README.md)
 - [Component Object Model](Applications/API/COM/README.md)
+- [Windows Runtime](Applications/API/WinRT/README.md)
+- [Windows App SDK](Applications/API/AppSDK/README.md)
+- [→.NET](https://github.com/Chaoses-Ib/.NET)
 
 ### Management
 - [Package Formats](Applications/Management/Package%20Formats.md)
 - [Package Managers](Applications/Management/Package%20Managers.md)
 - [Application Data](Applications/Management/Data.md)
-
-## Information sources
-<details><summary>Books</summary>
-
-- Windows Internals
-</details>
-
-<details><summary>Blogs</summary>
-
-- [Windows Developer Blog](https://blogs.windows.com/windowsdeveloper/)
-- [DevBlogs - Microsoft Developer Blogs](https://devblogs.microsoft.com/)
-  - [The Old New Thing](https://devblogs.microsoft.com/oldnewthing/)
-  - [Performance and Diagnostics](https://devblogs.microsoft.com/performance-diagnostics/)
-  - [Windows Command Line](https://devblogs.microsoft.com/commandline/)
-  - [PowerShell Community](https://devblogs.microsoft.com/powershell-community/)  
-  - [Scripting Blog - A place to learn about PowerShell and share stories of automation](https://devblogs.microsoft.com/scripting/)
-</details>
-
-<details><summary>News</summary>
-
-- [r/windows](https://www.reddit.com/r/windows/)
-- [r/WindowsSecurity](https://www.reddit.com/r/WindowsSecurity/)
-</details>
