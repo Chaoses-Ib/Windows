@@ -1,4 +1,6 @@
 # [Windows](Windows.md)
+- [Windows Insider](Windows/Insider.md)
+
 ## Kernel
 - Traps
   - [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
