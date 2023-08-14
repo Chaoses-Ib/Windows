@@ -9,6 +9,8 @@ Latest build notes:
 - [Beta](https://aka.ms/BetaLatest)
 - [Release Preview](https://aka.ms/ReleasePreviewLatest)
 
+[Windows 11 Insider Preview build history tracker - Pureinfotech](https://pureinfotech.com/windows-11-insider-preview-build-history-tracker/)
+
 [Switching between channels](https://learn.microsoft.com/en-us/windows-insider/flighting#switching-between-channels)
 - [Can’t switch Windows Insider Channel on Windows 11 Dev or Beta](https://www.thewindowsclub.com/cant-switch-windows-insider-channel-on-windows)
 
