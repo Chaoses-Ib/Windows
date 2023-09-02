@@ -34,6 +34,10 @@
 - [DirectX](Media/Graphics/DirectX/README.md)
 
 ## User Interfaces
+- [Accessibility](User%20Interfaces/Accessibility/README.md)
+  - [Active Accessibility](User%20Interfaces/Accessibility/Active.md)
+  - [UI Automation](User%20Interfaces/Accessibility/Automation/README.md)
+
 ### CLI
 - [Sleeping](User%20Interfaces/CLI/Sleeping.md)
 
