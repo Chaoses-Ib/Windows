@@ -48,6 +48,7 @@
 - [SendInput](User%20Interfaces/GUI/SendInput.md)
 
 ### [Shell](User%20Interfaces/Shell/README.md)
+- [Context Menus](User%20Interfaces/Shell/Menus/README.md)
 - [Windows Search](User%20Interfaces/Shell/Windows%20Search.md)
 - [Deployment](User%20Interfaces/Shell/Deployment.md)
 

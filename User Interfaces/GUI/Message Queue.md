@@ -5,7 +5,7 @@ Message → Foreground → Active
 
 ## Implementation
 ```cpp
-// XP SP1
+// Windows XP SP1
 
 /*
  * Message Queue structure.

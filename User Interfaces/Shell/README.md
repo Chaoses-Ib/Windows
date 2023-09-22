@@ -61,6 +61,9 @@ Other handlers:
 - [Disk Cleanup handler](https://docs.microsoft.com/en-us/windows/win32/lwef/disk-cleanup)  
   Add a new entry to the Disk Cleanup application and allows specifying additional disk locations or files to clean up.[^explorer-wiki]
 
+Tools:
+- [ShellExView - Shell Extension Manager For Windows](https://www.nirsoft.net/utils/shexview.html)
+
 ## File Explorer
 File Explorer (Windows Explorer) is a file manager included with Windows 95 and later.[^explorer-wiki]
 
@@ -82,3 +85,15 @@ File Explorer (Windows Explorer) is a file manager included with Windows 95 and 
 ## Desktop
 ### Extensions
 - [Gadgets](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/sidebar/-sidebar-entry)
+
+## .NET
+- [SharpShell: Makes it easy to create Windows Shell Extensions using the .NET Framework.](https://github.com/dwmkerr/sharpshell)
+- [ManagedShell: A library for creating Windows shell replacements using .NET.](https://github.com/cairoshell/ManagedShell)
+- [MMSF: Managed Mini Shell extension Framework](https://github.com/vbaderks/mmsf)
+- [starshipxac.ShellLibrary: This library that can be used with .NET Framework such as Windows Shell API, IFileDialog and so on.](https://github.com/rasmus-z/starshipxac.ShellLibrary)
+- [gong-shell: A .NET Windows Shell library.](https://github.com/grokys/gong-shell) (discontinued)
+- [ShellBrowser .NET Components | JAM Software](https://www.jam-software.com/shellbrowser_net) (paid)
+- [Shell MegaPack : Windows Explorer-Like File & Folder Browser Controls & Components For .Net, WPF & ActiveX](https://www.ssware.com/megapack.htm) (discontinued)
+  - [Shell MegaPack.WPF - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=LogicNP.ShellMegaPackWPF)
+  - [Thank you for installing Shell MegaPack.WPF](http://www.ssware.com/install_shellmegapackwpf.htm)
+- [Cairo: A customizable, intuitive desktop environment for Windows.](https://github.com/cairoshell/cairoshell)
