@@ -6,6 +6,8 @@
   - [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
 - [Processes](Kernel/Processes/README.md)
   - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
+- Threads
+  - [Synchronization](Kernel/Threads/Sync/README.md)
 - [Memory Management](Kernel/Memory/README.md)
   - [Working Sets](Kernel/Memory/Working%20Sets.md)
 - [Power Management](Kernel/Power/README.md)

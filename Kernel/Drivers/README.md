@@ -11,6 +11,10 @@ Frameworks:
    - User-Mode Driver Framework (UMDF)
 4. Universal Windows drivers
 
+Rust:
+- [windows-drivers-rs: Platform that enables Windows driver development in Rust.](https://github.com/microsoft/windows-drivers-rs)
+  - [r/rust](https://www.reddit.com/r/rust/comments/16owkbv/microsoftwindowsdriversrs_platform_that_enables/)
+
 Tools:
 - Compuware DriverStudio (discontinued)
 
