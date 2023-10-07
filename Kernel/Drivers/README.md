@@ -3,7 +3,8 @@
 SDK: [Windows Driver Kit](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk) (previously Driver Development Kit)
 
 Frameworks:
-1. Windows NT Driver Model  
+1. Windows NT Driver Model
+   
    Not support PnP and Power Options.
 2. Windows Driver Model
 3. Windows Driver Frameworks (Windows Driver Foundation)

@@ -8,9 +8,11 @@ A **hive** is a logical group of keys, subkeys, and values in the registry that 
 - [Registry Virtualization](https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry-virtualization)
 - [RegOverridePredefKey()](https://docs.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regoverridepredefkey)
 - Hooking
-  - [Sandboxie](https://github.com/sandboxie-plus/Sandboxie)  
+  - [Sandboxie](https://github.com/sandboxie-plus/Sandboxie)
+    
     [Sandbox Hierarchy](https://sandboxie-plus.com/sandboxie/sandboxhierarchy/)
-  - [WinPriv](https://github.com/NoMoreFood/WinPriv)  
+  - [WinPriv](https://github.com/NoMoreFood/WinPriv)
+    
     WinPriv is a utility that can enable privileges and virtually alter registry settings within a target process, amongst other things.
 
 ## Performance

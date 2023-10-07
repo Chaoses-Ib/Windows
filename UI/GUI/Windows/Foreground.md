@@ -1,4 +1,4 @@
-# Foreground Window
+# Foreground Windows
 Each process can have multiple threads of execution, and each thread can create windows. The thread that created the window with which the user is currently working is called the foreground thread, and the window is called the **foreground window**. All other threads are background threads, and the windows created by background threads are called **background windows**.
 
 ## Implementation

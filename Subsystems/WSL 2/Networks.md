@@ -22,7 +22,8 @@ $ ip addr
 ```
 
 Possible reasons:
-- You are using [bridge mode](#bridge-mode) and the virtual switch was broken however  
+- You are using [bridge mode](#bridge-mode) and the virtual switch was broken however
+  
   Bridging to VMware's VMnet and then updating VMware may cause this problem. The broken switch will be displayed as an internal switch in the Virtual Switch Manager.
 
   The solution is to fix the virtual switch to an external one.

@@ -14,7 +14,7 @@
 - Diagnostics
   - [Event Tracing for Windows](Kernel/Diagnostics/ETW/README.md)
 - [Security](Kernel/Security/README.md)
-  - [Virtualization-Based Security](Kernel/Security/Virtualization-Based%20Security.md)
+  - [Virtualization-Based Security](Kernel/Security/Virtualization.md)
   - [User Interface Privilege Isolation](Kernel/Security/UIPI.md)
 - Configuration
   - [Registry](Kernel/Configuration/Registry/README.md)
@@ -36,23 +36,26 @@
 - [DirectX](Media/Graphics/DirectX/README.md)
 
 ## User Interfaces
-- [Accessibility](User%20Interfaces/Accessibility/README.md)
-  - [Active Accessibility](User%20Interfaces/Accessibility/Active.md)
-  - [UI Automation](User%20Interfaces/Accessibility/Automation/README.md)
+- [Accessibility](UI/Accessibility/README.md)
+  - [Active Accessibility](UI/Accessibility/Active.md)
+  - [UI Automation](UI/Accessibility/Automation/README.md)
+
+### Human Interface Devices
+- [SendInput](UI/HID/SendInput.md)
 
 ### CLI
-- [Sleeping](User%20Interfaces/CLI/Sleeping.md)
+- [Sleeping](UI/CLI/Sleeping.md)
 
 ### GUI
-- [Windows](User%20Interfaces/GUI/Windows.md)
-  - [Foreground Window](User%20Interfaces/GUI/Foreground%20Window.md)
-- [Message Queue](User%20Interfaces/GUI/Message%20Queue.md)
-- [SendInput](User%20Interfaces/GUI/SendInput.md)
+- [Windows](UI/GUI/Windows/README.md)
+  - [Foreground Windows](UI/GUI/Windows/Foreground.md)
+- Messages
+  - [Message Queues](UI/GUI/Messages/Queues.md)
 
-### [Shell](User%20Interfaces/Shell/README.md)
-- [Context Menus](User%20Interfaces/Shell/Menus/README.md)
-- [Windows Search](User%20Interfaces/Shell/Windows%20Search.md)
-- [Deployment](User%20Interfaces/Shell/Deployment.md)
+### [Shell](UI/Shell/README.md)
+- [Context Menus](UI/Shell/Menus/README.md)
+- [Windows Search](UI/Shell/Search.md)
+- [Deployment](UI/Shell/Deployment.md)
 
 ## Applications
 ### [API](Applications/API/README.md)

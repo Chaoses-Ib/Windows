@@ -15,7 +15,8 @@ COM has three activation models that can be used to bring objects into memory to
   - [Using COM without registration – Developex blog](https://developex.com/blog/using-com-without-registration/)
 - [Registry virtualization](../../../Kernel/Configuration/Registry/README.md#virtualization)
   - [Using COM without registration – Developex blog](https://developex.com/blog/using-com-without-registration/)
-- Call `DllGetClassObject()`  
+- Call `DllGetClassObject()`
+  
   > Make sure you're in the correct apartment before calling `DllGetClassObject()`. Even so, you won't get marshaling for the specific object model interfaces. Even if the C++ COM objects implement `IMarshal` or `IProvideClassInfo` themselves, you'll need to do the same if you're the one providing objects that implement any of those interfaces (e.g. event dispinterfaces). For these reasons and many other, this is bad practice.[^regfree-so]
 
   - [Using COM Without Registration - CodeProject](https://www.codeproject.com/Tips/1037909/Using-COM-Without-Registration)

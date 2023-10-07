@@ -2,7 +2,7 @@
 ## [Relationships](https://learn.microsoft.com/en-us/windows/win32/winmsg/window-features#window-relationships)
 There are many ways that a window can relate to the user or another window. A window may be an owned window, foreground window, or background window. A window also has a z-order relative to other windows.
 
-### [Foreground and background windows](Foreground%20Window.md)
+### [Foreground and background windows](Foreground.md)
 Each process can have multiple threads of execution, and each thread can create windows. The thread that created the window with which the user is currently working is called the foreground thread, and the window is called the **foreground window**. All other threads are background threads, and the windows created by background threads are called **background windows**.
 
 ### Z-order

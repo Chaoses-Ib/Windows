@@ -9,7 +9,7 @@
 - Local Security Authority Subsystem Service (LSASS)
   
   This user-mode process runs the image `Lsass.exe` that is responsible for the local system security policy (such as which users are allowed to log on to the machine, password policies, privileges granted to users and groups, and the system security auditing settings), user authentication, and sending security audit messages to the event log. The Local Security Authority service (`Lsasrv.dll`), a library that Lsass loads, implements most of this functionality.
-- [Credential Guard (LSAIso.exe)](Virtualization-Based%20Security.md#credential-guard)
+- [Credential Guard (LSAIso.exe)](Virtualization.md#credential-guard)
   
   This is used by Lsass (if so configured on supported Windows 10 and Server 2016 systems) to store users’ token hashes instead of keeping them in Lsass’s memory. Because Lsaiso.exe is a Trustlet (Isolated User Mode process) running in VTL 1, no normal process - not even the normal kernel - can access the address space of this process. Lsass itself stores an encrypted blob of the password hash needed when it communicates with Lsaiso (via ALPC).
 - Lsass policy database

@@ -1,4 +1,4 @@
-# [Message Queue](https://learn.microsoft.com/en-us/windows/win32/winmsg/about-messages-and-message-queues)
+# [Message Queues](https://learn.microsoft.com/en-us/windows/win32/winmsg/about-messages-and-message-queues)
 The system maintains a single system message queue and one thread-specific message queue for each GUI thread. Whenever the user moves the mouse, clicks the mouse buttons, or types on the keyboard, the device driver for the mouse or keyboard converts the input into messages and places them in the system message queue. The system removes the messages, one at a time, from the system message queue, examines them to determine the destination window, and then posts them to the message queue of the thread that created the destination window. A thread's message queue receives all mouse and keyboard messages for the windows created by the thread. The thread removes messages from its queue and directs the system to send them to the appropriate window procedure for processing.
 
 Message → Foreground → Active

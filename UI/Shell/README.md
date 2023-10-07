@@ -24,41 +24,58 @@ The ultimate root of the namespace hierarchy is the desktop. Immediately below t
 The capabilities of the Shell can be extended with registry entries and `.ini` files. While this approach to extending the Shell is simple, and adequate for many purposes, it is limited. A more powerful and flexible approach to extending the Shell is to implement **shell extension handlers**. These handlers can be implemented for a variety of actions that the Shell can perform.
 
 Handlers associated with a paricular file type:
-- [Shortcut menu handler](https://docs.microsoft.com/en-us/windows/win32/shell/context-menu-handlers) (Context menu handler)  
+- [Shortcut menu handler](https://docs.microsoft.com/en-us/windows/win32/shell/context-menu-handlers) (Context menu handler)
+  
   Called before a file's shortcut menu is displayed. It enables you to add items to the shortcut menu on a file-by-file basis.
-- [Data handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-create-data-handlers)  
+- [Data handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-create-data-handlers)
+  
   Called when a drag-and-drop operation is performed on `dragShell` objects. It enables you to provide additional clipboard formats to the drop target.
-- [Drop handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-create-drop-handlers)  
+- [Drop handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-create-drop-handlers)
+  
   Called when a data object is dragged over or dropped on a file. It enables you to make a file into a drop target.
-- [Icon handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-create-icon-handlers)  
+- [Icon handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-create-icon-handlers)
+  
   Called before a file's icon is displayed. It enables you to replace the file's default icon with a custom icon on a file-by-file basis.
-- [Property sheet handler](https://docs.microsoft.com/en-us/windows/win32/shell/propsheet-handlers)  
+- [Property sheet handler](https://docs.microsoft.com/en-us/windows/win32/shell/propsheet-handlers)
+  
   Called before an object's Properties property sheet is displayed. It enables you to add or replace pages.
-- [Thumbnail image handler](https://docs.microsoft.com/en-us/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider)  
+- [Thumbnail image handler](https://docs.microsoft.com/en-us/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider)
+  
   Provides an image to represent the item.
-- [Infotip handler](https://docs.microsoft.com/en-us/windows/win32/api/shlobj_core/nn-shlobj_core-iqueryinfo)  
+- [Infotip handler](https://docs.microsoft.com/en-us/windows/win32/api/shlobj_core/nn-shlobj_core-iqueryinfo)
+  
   Provides pop-up text when the user hovers the mouse pointer over the object.
-- [Property handler](https://docs.microsoft.com/en-us/windows/win32/properties/building-property-handlers) (Metadata handler)  
+- [Property handler](https://docs.microsoft.com/en-us/windows/win32/properties/building-property-handlers) (Metadata handler)
+  
   Provides read and write access to metadata (properties) stored in a file. This can be used to extend the Details view, infotips, the property page, and grouping features.
-- [Preview handler](https://docs.microsoft.com/en-us/windows/win32/shell/preview-handlers)  
+- [Preview handler](https://docs.microsoft.com/en-us/windows/win32/shell/preview-handlers)
+  
   Called when an item is selected to show a lightweight, rich, read-only preview of the file's contents in the view's reading pane. This is done without launching the file's associated application.
-- [Filter handler](https://docs.microsoft.com/en-us/windows/win32/search/-search-3x-wds-extidx-overview)  
+- [Filter handler](https://docs.microsoft.com/en-us/windows/win32/search/-search-3x-wds-extidx-overview)
+  
   Allows file properties and its contents to be indexed and searched by Indexing Service or Windows Search.[^explorer-wiki]
-- [AutoPlay event handler](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/windows-media-center-sdk/aa468474(v=msdn.10))  
+- [AutoPlay event handler](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/windows-media-center-sdk/aa468474(v=msdn.10))
+  
   Examines newly discovered removable media and devices and, based on content such as pictures, music or video files, launches an appropriate application to play or display the content.[^explorer-wiki]
 
 Other handlers:
-- [Column handler](https://docs.microsoft.com/en-us/windows/win32/lwef/column-handlers) (only Windows XP or earlier)  
+- [Column handler](https://docs.microsoft.com/en-us/windows/win32/lwef/column-handlers) (only Windows XP or earlier)
+  
   Called by Windows Explorer before it displays the Details view of a folder. It enables you to add custom columns to the Details view.
-- [Copy hook handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-create-copy-hook-handlers)  
+- [Copy hook handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-create-copy-hook-handlers)
+  
   Called when a folder or printer object is about to be moved, copied, deleted, or renamed. It enables you to approve or veto the operation.
-- [Drag-and-drop handler](https://docs.microsoft.com/en-us/windows/win32/shell/context-menu-handlers#creating-drag-and-drop-handlers)  
+- [Drag-and-drop handler](https://docs.microsoft.com/en-us/windows/win32/shell/context-menu-handlers#creating-drag-and-drop-handlers)
+  
   Called when a file is dragged with the right mouse button. It enables you to modify the shortcut menu that is displayed.
-- [Icon overlay handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-implement-icon-overlay-handlers)  
+- [Icon overlay handler](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-implement-icon-overlay-handlers)
+  
   Called before a file's icon is displayed. It enables you to specify an overlay for the file's icon.
-- [Search handler](https://docs.microsoft.com/en-us/windows/win32/lwef/search-handlers)  
+- [Search handler](https://docs.microsoft.com/en-us/windows/win32/lwef/search-handlers)
+  
   Called to launch a search engine. It enables you to implement a custom search engine accessible from the Start menu or Windows Explorer.
-- [Disk Cleanup handler](https://docs.microsoft.com/en-us/windows/win32/lwef/disk-cleanup)  
+- [Disk Cleanup handler](https://docs.microsoft.com/en-us/windows/win32/lwef/disk-cleanup)
+  
   Add a new entry to the Disk Cleanup application and allows specifying additional disk locations or files to clean up.[^explorer-wiki]
 
 Tools:
