@@ -51,9 +51,13 @@
   - [Foreground Windows](UI/GUI/Windows/Foreground.md)
 - Messages
   - [Message Queues](UI/GUI/Messages/Queues.md)
+- [Common Controls](UI/GUI/Controls/README.md)
+  - [ImageList](UI/GUI/Controls/ImageList.md)
 
 ### [Shell](UI/Shell/README.md)
 - [Context Menus](UI/Shell/Menus/README.md)
+- [Icons](UI/Shell/Icons/README.md)
+- [Taskbar](UI/Shell/Taskbar/README.md)
 - [Windows Search](UI/Shell/Search.md)
 - [Deployment](UI/Shell/Deployment.md)
 
