@@ -133,6 +133,8 @@
 - [Package Formats](Applications/Management/Package%20Formats.md)
 - [Installers](Applications/Management/Installers/README.md)
   - [Inno Setup](<Applications/Management/Installers/Inno Setup/README.md>)
+  - Advanced Installer
+    - [Upgrades](Applications/Management/Installers/Advanced/Upgrades.md)
 - [Package Managers](Applications/Management/Package%20Managers.md)
   - [Scoop](Applications/Management/Scoop/README.md)
 - [Application Data](Applications/Management/Data.md)
