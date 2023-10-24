@@ -35,6 +35,8 @@
 ### Graphics
 - [DirectX](Media/Graphics/DirectX/README.md)
 
+### [Text](Media/Text/README.md)
+
 ## User Interfaces
 - [Accessibility](UI/Accessibility/README.md)
   - [Active Accessibility](UI/Accessibility/Active.md)
