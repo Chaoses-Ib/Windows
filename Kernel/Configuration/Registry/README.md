@@ -4,6 +4,9 @@ The **registry** is a system-defined database in which applications and system c
 ## [Hives](https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry-hives)
 A **hive** is a logical group of keys, subkeys, and values in the registry that has a set of supporting files loaded into memory when the operating system is started or a user logs in.
 
+## Links
+[Creating Registry Links -- Pavel Yosifovich](https://scorpiosoftware.net/2020/07/17/creating-registry-links/)
+
 ## Virtualization
 - [Registry Virtualization](https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry-virtualization)
 - [RegOverridePredefKey()](https://docs.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regoverridepredefkey)

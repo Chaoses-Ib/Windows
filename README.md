@@ -43,6 +43,7 @@
   - [UI Automation](UI/Accessibility/Automation/README.md)
 
 ### Human Interface Devices
+- [Text](UI/HID/Text/README.md)
 - [SendInput](UI/HID/SendInput.md)
 
 ### CLI
