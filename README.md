@@ -8,8 +8,8 @@
   - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
 - Threads
   - [Synchronization](Kernel/Threads/Sync/README.md)
-- [Memory Management](Kernel/Memory/README.md)
-  - [Working Sets](Kernel/Memory/Working%20Sets.md)
+- [→Memory Management](https://github.com/Chaoses-Ib/InformationSystems#memory-management)
+- [→File Systems](https://github.com/Chaoses-Ib/InformationSystems#file-systems)
 - [Power Management](Kernel/Power/README.md)
 - Diagnostics
   - [Event Tracing for Windows](Kernel/Diagnostics/ETW/README.md)
