@@ -61,7 +61,11 @@ bcdedit /set vsmlaunchtype off
 bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} device partition=X:
 mountvol X: /d
 ```
-However, while `bcdedit /bootsequence` works, `bcdedit /default` does not, which means we can only disable VBS for the next boot. A workaround is to use Task Manager to run `bcdedit.exe /bootsequence {0cb3b571-2f2e-4343-a879-d86a476d7215}` after every boot.
+- [`mountvol X: /s` The parameter is incorrect. - Issue #6858 - MicrosoftDocs/windows-itpro-docs](https://github.com/MicrosoftDocs/windows-itpro-docs/issues/6858)
+
+  Can only be used with UEFI.
+
+However, while `bcdedit /bootsequence` works, `bcdedit /default` does not, which means we can only disable VBS for the next boot. A workaround is to use Task Scheduler to run `bcdedit.exe /bootsequence {0cb3b571-2f2e-4343-a879-d86a476d7215}` after every boot.
 
 At boot you should see the "Virtualization Based Security Opt-out Tool" asking you whether to disable VBS. Press Win or F3 to continue and reboot to the real system.
 
