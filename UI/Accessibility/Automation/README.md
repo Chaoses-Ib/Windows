@@ -18,6 +18,7 @@ Windows 组件对 UIA 的支持并不算很好：
 `System.Windows.Automation` 的封装太旧了，性能很低，应该用 COM 调用 `IUIAutomationElement`[^net-sys]：
 - [FlaUI: UI automation library for .Net](https://github.com/FlaUI/FlaUI)
 - [FlaUI/UIAutomation-Interop: Interop wrappers for UIAutomationCore and UIAutomationClient](https://github.com/FlaUI/UIAutomation-Interop) ([NuGet](https://www.nuget.org/packages/Interop.UIAutomationClient))
+- [White](https://github.com/TestStack/White) (deprecated)
 
 ## Tools
 - [Inspect](https://learn.microsoft.com/en-us/windows/win32/winauto/inspect-objects)
