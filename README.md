@@ -90,6 +90,7 @@
 - [Sleeping](UI/CLI/Sleeping.md)
 
 ### GUI
+- [Monitors](UI/GUI/Monitors/README.md)
 - [Desktops](UI/GUI/Desktops/README.md)
   - [Remote](UI/GUI/Desktops/Remote.md)
     - [RustDesk](UI/GUI/Desktops/RustDesk.md)
