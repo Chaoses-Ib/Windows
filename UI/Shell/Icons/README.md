@@ -1,4 +1,7 @@
 # Icons
+## Registry
+- [Get Registered File Types and Their Associated Icons in C# - CodeProject](https://www.codeproject.com/Articles/29137/Get-Registered-File-Types-and-Their-Associated-Ico)
+
 ## [`ExtractIcon`](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/nf-shellapi-extracticonw)
 ### [`ExtractAssociatedIcon`](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/nf-shellapi-extractassociatediconw)
 ```cpp
@@ -95,11 +98,25 @@ SHGetFileInfo() {
   > 
   > `FileIconInit` is not included in a header file. You must call it directly from `Shell32.dll`, using ordinal 660.
 
+- > You should call this function from a background thread. Failure to do so could cause the UI to stop responding.
+
+- Not thread-safe?
+
+  [windows - Delphi calling shgetfileinfo from a thread fails - Stack Overflow](https://stackoverflow.com/questions/21885962/delphi-calling-shgetfileinfo-from-a-thread-fails)
+
 - `SHGFI_USEFILEATTRIBUTES`
   - Even `SHGFI_USEFILEATTRIBUTES` is set, the file will still be read if its icon is not in cache. Use the extension as path (like `.exe`) can avoid this.
   - If flags has `FILE_ATTRIBUTE_DIRECTORY`, and the path is `""`, `SHGetFileInfo` will return the volume icon, not the folder icon. To get the folder icon, one can instead use `C:\Windows` as the path.
 
 - Because system image lists are created on a *per-process* basis, you should treat them as read-only objects. Writing to a system image list may overwrite or delete one of the system images, making it unavailable or incorrect for the remainder of the process.
+
+- Icon handlers
+  
+  `SHGetFileInfo` can be very slow (~250ms) with SolidWorks' `.sldprt`. It looks like `SHGetFileInfo` will still call the icon handler even only the extension (`.sldprt`) is provided as path. But the source code of Windows XP doesn't call the icon handler, perhaps it's added after XP.
+
+  If `SHGetFileInfo` is not called from a STA thread, it would not call the icon handlers. But the returned icon may be the unknown file type icon instead of the default icon of the file type. However, the document says one must use STA threads ("You must initialize COM with `CoInitialize` or `OleInitialize` prior to calling `SHGetFileInfo`").
+
+  [c# - SHGetFileInfo returns default icon from background thread, but correct icon from UI thread - Stack Overflow](https://stackoverflow.com/questions/22102858/shgetfileinfo-returns-default-icon-from-background-thread-but-correct-icon-from)
 
 <details>
 
@@ -431,6 +448,8 @@ API | Arguments | Time
 Despite the low average time cost of `SIIGBF_MEMORYONLY` is low, it has some outliers up to 30ms and [some other problems](#ishellitemimagefactory-vista). In contrast, normal `SHGetFileInfo` has outliers up to 15ms (it will extract the icon if it is not in cache).
 
 To make the UI fluent, one can first call `SHGetFileInfo` with the extension to get the per-class icon (which is fast and has no outliers) and display it, and then call `IShellItemImageFactory` (or `SHGetFileInfo` if it is enough) to get the per-instance icon and display it instead.
+
+Update: However, `SHGetFileInfo` still has some problems with [icon handlers](#shgetfileinfo).
 
 [c++ - SHGetFileInfo performance issues - Stack Overflow](https://stackoverflow.com/questions/54292062/shgetfileinfo-performance-issues)
 
