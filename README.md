@@ -63,6 +63,7 @@
 - [Context Menus](UI/Shell/Menus/README.md)
 - [Icons](UI/Shell/Icons/README.md)
 - [Taskbar](UI/Shell/Taskbar/README.md)
+- [File Explorer](UI/Shell/Explorer/README.md)
 - [Windows Search](UI/Shell/Search.md)
 - [Deployment](UI/Shell/Deployment.md)
 
