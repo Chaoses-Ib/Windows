@@ -19,6 +19,8 @@
 - Configuration
   - [Registry](Kernel/Configuration/Registry/README.md)
 - [Drivers](Kernel/Drivers/README.md)
+- Devices
+  - [Time](Kernel/Devices/Time/README.md)
 
 ## [Subsystems](Subsystems/README.md)
 - [Ntdll.dll](Subsystems/Ntdll.dll.md)
