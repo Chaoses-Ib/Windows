@@ -7,6 +7,7 @@
 - [Processes](Kernel/Processes/README.md)
   - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
   - [Scheduling](Kernel/Processes/Scheduling/README.md)
+  - [Dumps](Kernel/Processes/Dumps.md)
 - Threads
   - [Synchronization](Kernel/Threads/Sync/README.md)
 - [→Memory Management](https://github.com/Chaoses-Ib/InformationSystems#memory-management)
