@@ -5,6 +5,7 @@
 - Traps
   - [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
 - [Processes](Kernel/Processes/README.md)
+  - [Environment Variables](<Kernel/Processes/Environment Variables.md>)
   - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
   - [Scheduling](Kernel/Processes/Scheduling/README.md)
   - [Dumps](Kernel/Processes/Dumps.md)
