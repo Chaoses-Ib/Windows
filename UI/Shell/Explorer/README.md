@@ -8,6 +8,10 @@
 - [`SHOpenFolderAndSelectItems()`](https://learn.microsoft.com/en-us/windows/win32/api/shlobj_core/nf-shlobj_core-shopenfolderandselectitems)
 
   C#: [How to use SHOpenFolderAndSelectItems - Stack Overflow](https://stackoverflow.com/questions/3018002/c-how-to-use-shopenfolderandselectitems)
+  - `COMException`
+    - `E_ABORT` (0x80004004): QTTabBar
+    - `E_FAIL`
+  - `ArgumentException`
 
   e.g. 飞书
 
