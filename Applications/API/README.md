@@ -31,7 +31,9 @@
 ### Rust
 - [windows-rs: Rust for Windows](https://github.com/microsoft/windows-rs)
   - [windows](https://microsoft.github.io/windows-docs-rs/doc/windows/)
-  - [windows_sys](https://docs.rs/windows-sys/latest/windows_sys/)
+  - [windows-sys](https://docs.rs/windows-sys/)
+  - [windows-result](https://docs.rs/windows-result/)
+  - [windows-registry](https://docs.rs/windows-registry/)
 
   [Getting Started with Rust](https://kennykerr.ca/rust-getting-started/index.html)
 
@@ -102,6 +104,10 @@
       ```
 
   - [RAII type for HANDLES? · Issue #2222 · microsoft/windows-rs](https://github.com/microsoft/windows-rs/issues/2222)
+
+  v0.48 → v0.56:
+  - `BOOL` → `Result<()>`
+  - Some pointers → references
 
 - [winapi-rs: Rust bindings to Windows API](https://github.com/retep998/winapi-rs)
 

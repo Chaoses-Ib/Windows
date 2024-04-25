@@ -1,6 +1,34 @@
 # [Component Object Model](https://docs.microsoft.com/en-us/windows/win32/com/component-object-model--com--portal)
 COM is a platform-independent, distributed, object-oriented system for creating binary software components that can interact.
 
+## Bindings
+### Rust
+- [windows-interface](https://docs.rs/windows-interface/)
+- [windows-implement](https://docs.rs/windows-implement/)
+
+```rust
+#[interface("094d70d6-5202-44b8-abb8-43860da5aca2")]
+unsafe trait IValue: IUnknown {
+    fn GetValue(&self, value: *mut i32) -> HRESULT;
+}
+
+#[implement(IValue)]
+struct Value(i32);
+
+impl IValue_Impl for Value {
+    unsafe fn GetValue(&self, value: *mut i32) -> HRESULT {
+        *value = self.0;
+        HRESULT(0)
+    }
+}
+
+fn main() {
+    let rust_instance = Value(123);
+    let com_object: IValue = rust_instance.into();
+    // You can now call interface methods on com_object.
+}
+```
+
 ## Activation
 COM has three activation models that can be used to bring objects into memory to allow method calls be invoked[^essential]:
 - Inprocess
