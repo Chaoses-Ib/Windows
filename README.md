@@ -47,7 +47,9 @@
   - [Active Accessibility](UI/Accessibility/Active.md)
   - [UI Automation](UI/Accessibility/Automation/README.md)
 
-### Human Interface Devices
+### [Human Interface Devices](UI/HID/README.md)
+- [Keyboard](UI/HID/Keyboard/README.md)
+- [Mouse](UI/HID/Mouse/README.md)
 - [Text](UI/HID/Text/README.md)
 - [SendInput](UI/HID/SendInput.md)
 
