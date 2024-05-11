@@ -1,4 +1,21 @@
 # Processes
+## Process ID
+[Wikipedia](https://en.wikipedia.org/wiki/Process_identifier#Microsoft_Windows)
+
+- `GetProcessId()`
+- [`GetCurrentProcessId()`](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessid)
+- `GetProcessIdOfThread()`
+- TEB
+  - `ClientId`
+  - `RealClientId`
+
+[Fourteen Ways to Read the PID for the Local Security Authority Subsystem Service (LSASS) - MDSec](https://www.mdsec.co.uk/2022/08/fourteen-ways-to-read-the-pid-for-the-local-security-authority-subsystem-service-lsass/)
+
+[Project Zero: Windows‌ ‌Exploitation‌ ‌Tricks:‌ ‌Spoofing‌ ‌Named‌ ‌Pipe‌ ‌Client‌ ‌PID‌](https://googleprojectzero.blogspot.com/2019/09/windows-exploitation-tricks-spoofing.html)
+
+Tools:
+- [Finding the Process ID - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/finding-the-process-id)
+
 ## Process injection
 Approaches[^inject-2019]:
 - [DLL injection](DLLs/README.md#dll-injection)
