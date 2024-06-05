@@ -1,4 +1,5 @@
 # [Windows](Windows.md)
+- [Windows Update](Windows/Update.md)
 - [Windows Insider](Windows/Insider.md)
 
 ## Kernel
