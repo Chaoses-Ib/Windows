@@ -1,4 +1,5 @@
 # [Windows](Windows.md)
+- [Versions](Windows/Versions.md)
 - [Windows Update](Windows/Update.md)
 - [Windows Insider](Windows/Insider.md)
 
