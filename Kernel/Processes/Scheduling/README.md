@@ -51,3 +51,5 @@
       return cpu.NextValue() / Environment.ProcessorCount;
   }
   ```
+
+[win11 任务管理器 CPU 利用率错误 - V2EX](https://www.v2ex.com/t/1022021)

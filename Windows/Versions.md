@@ -8,6 +8,6 @@
   - Do not try to clone the full repository. It is about 47 GiB.
   - [16Hexa/winbindex-tool](https://github.com/16Hexa/winbindex-tool)
 
-- [Windows binary repository](https://github.com/Eagle1020/win_library)
+- [Windows Binary Repository](https://github.com/16Hexa/windows-binaries)
 
 [How to get WinBuild info using C/C++ - Stack Overflow](https://stackoverflow.com/questions/67984863/how-to-get-winbuild-info-using-c-c)

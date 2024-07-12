@@ -16,6 +16,61 @@
 Tools:
 - [Finding the Process ID - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/finding-the-process-id)
 
+## Parent process
+[Parent Process vs. Creator Process -- Pavel Yosifovich](https://scorpiosoftware.net/2021/01/10/parent-process-vs-creator-process/)
+
+Parent process ID:
+- `NtQueryInformationProcess()` → `PROCESS_BASIC_INFORMATION.InheritedFromUniqueProcessId` (`Reserved3`)
+  
+  C++:
+  - [IbProcessGuard](https://github.com/Chaoses-Ib/IbProcessGuard/blob/8789711d9a8a6d3083b575f62548fb3a4bb00727/IbParentProcessGuard/Main.cpp#L51-L56)
+  - [windows 下获取父进程pid - 纯白、色 - 博客园](https://www.cnblogs.com/jkcx/p/7457339.html)
+  
+  Rust:
+  - ~~`std`~~: There is `parent_id()` in `std::os::unix::process`, but not in `std::os::windows::process`.
+  - [sysinfo](https://github.com/GuillaumeGomez/sysinfo/blob/3cc3df817d3f3c1118ae8bcc438c5ca1c29c016e/src/windows/process.rs#L808-L829)
+
+- `CreateToolhelp32Snapshot()`
+
+  ```cpp
+  #include <Windows.h>
+  #include <TlHelp32.h>
+  #include <iostream>
+
+  DWORD GetParentProcessId(DWORD pid) {
+      DWORD ppid = -1;
+      HANDLE hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+      if (hSnapshot != INVALID_HANDLE_VALUE) {
+          PROCESSENTRY32 pe;
+          pe.dwSize = sizeof(PROCESSENTRY32);
+          if (Process32First(hSnapshot, &pe)) {
+              do {
+                  if (pe.th32ProcessID == pid) {
+                      ppid = pe.th32ParentProcessID;
+                      break;
+                  }
+              } while (Process32Next(hSnapshot, &pe));
+          }
+          CloseHandle(hSnapshot);
+      }
+      return ppid;
+  }
+
+  int main() {
+      DWORD pid = GetCurrentProcessId();
+      DWORD ppid = GetParentProcessId(pid);
+      std::wcout << L"Parent PID: " << ppid << std::endl;
+      return 0;
+  }
+  ```
+
+- WMI
+
+Tools:
+- PowerShell: `(Get-Process).Parent.Id`
+
+  [Powershell how to get the ParentProcessID by the ProcessID - Stack Overflow](https://stackoverflow.com/questions/33911332/powershell-how-to-get-the-parentprocessid-by-the-processid)
+
 ## Process injection
 Approaches[^inject-2019]:
 - [DLL injection](DLLs/README.md#dll-injection)
