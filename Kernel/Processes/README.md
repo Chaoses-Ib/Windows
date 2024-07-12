@@ -30,6 +30,12 @@ Parent process ID:
   - ~~`std`~~: There is `parent_id()` in `std::os::unix::process`, but not in `std::os::windows::process`.
   - [sysinfo](https://github.com/GuillaumeGomez/sysinfo/blob/3cc3df817d3f3c1118ae8bcc438c5ca1c29c016e/src/windows/process.rs#L808-L829)
 
+    `cargo add sysinfo --no-default-features`
+    ```rust
+    let system = sysinfo::System::new();
+    let parent = system.process(sysinfo::get_current_pid().unwrap()).unwrap().parent().unwrap();
+    ```
+
 - `CreateToolhelp32Snapshot()`
 
   ```cpp
