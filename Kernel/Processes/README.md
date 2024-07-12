@@ -32,8 +32,15 @@ Parent process ID:
 
     `cargo add sysinfo --no-default-features`
     ```rust
-    let system = sysinfo::System::new();
-    let parent = system.process(sysinfo::get_current_pid().unwrap()).unwrap().parent().unwrap();
+    let mut system = sysinfo::System::new();
+    let current_pid = sysinfo::get_current_pid().unwrap();
+    system.refresh_process_specifics(current_pid, sysinfo::ProcessRefreshKind::new());
+    let parent_pid = system.process(current_pid).unwrap().parent().unwrap();
+
+    system.refresh_process_specifics(parent_pid, sysinfo::ProcessRefreshKind::new());
+    if let Some(parent) = system.process(parent_pid) {
+        parent.wait();
+    }
     ```
 
 - `CreateToolhelp32Snapshot()`
