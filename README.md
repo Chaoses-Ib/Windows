@@ -75,6 +75,8 @@
 - [Deployment](UI/Shell/Deployment.md)
 
 ## Applications
+- [Windhawk](Applications/Windhawk.md)
+
 ### [API](Applications/API/README.md)
 - [Win32](Applications/API/Win32/README.md)
 - [Component Object Model](Applications/API/COM/README.md)
