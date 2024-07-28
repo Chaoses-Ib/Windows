@@ -5,8 +5,14 @@
 Approaches[^inject-wiki]:
 - Windows hooks
 - [Process injection](../README.md#process-injection) + LoadLibrary()
+
+  Rust:
+  - [OpenByteDev/dll-syringe: A windows dll injection library written in rust.](https://github.com/OpenByteDev/dll-syringe)
+  - [qbx2/dll-injector: DLL injector written in Rust](https://github.com/qbx2/dll-injector)
+  - [C0D3-M4513R/inject-lib](https://github.com/C0D3-M4513R/inject-lib)
+
 - IME
-- DLL hijacking
+- [DLL hijacking](#dll-hijacking)
 - [COM hijacking](../../../Applications/API/COM/README.md#hijacking)
 - SetWinEventHook()
   
@@ -23,6 +29,20 @@ Approaches[^inject-wiki]:
 
 [^inject-wiki]: [DLL injection - Wikipedia](https://en.wikipedia.org/wiki/DLL_injection)
 [^inject-2019]: Klein, Amit, Itzik Kotler, and Safebreach Labs. “Windows Process Injection in 2019,” n.d., 34.
+
+## DLL hijacking
+C++:
+- [IbDllHijackLib: A C library for Windows DLL hijacking.](https://github.com/Chaoses-Ib/IbDllHijackLib)
+
+Rust:
+- [WarrenHood/proxygen: A DLL proxy generator written in Rust.](https://github.com/WarrenHood/proxygen)
+  - `#[forward]` is not export forwarding, but just inline asm.
+  - `#[proxy]`, `#[pre_hook]`, `#[post_hook]`
+- [Kudaes/ADPT: DLL proxying for lazy people](https://github.com/Kudaes/ADPT)
+- [Kazurin-775/dll-spoofer-rs: A spoofing / hijacking DLL creator written in Rust](https://github.com/Kazurin-775/dll-spoofer-rs)
+- [b1-team/dll-hijack: Dll hijack -- just one macro](https://github.com/b1-team/dll-hijack)
+- [aancw/DllProxy-rs: Rust Implementation of SharpDllProxy for DLL Proxying Technique](https://github.com/aancw/DllProxy-rs)
+- [0xf00sec/DLLProxying-rs: a simple implementation of Proxy-DLL-Loads in Rust](https://github.com/0xf00sec/DLLProxying-rs)
 
 ## Tools
 - [Dependencies: A rewrite of the old legacy software "depends.exe" in C# for Windows devs to troubleshoot dll load dependencies issues.](https://github.com/lucasg/Dependencies) (inactive)
