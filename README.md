@@ -9,6 +9,7 @@
 - [Processes](Kernel/Processes/README.md)
   - [Environment Variables](<Kernel/Processes/Environment Variables.md>)
   - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
+    - [DLL Search Order](Kernel/Processes/DLLs/Search.md)
   - [Scheduling](Kernel/Processes/Scheduling/README.md)
   - [Dumps](Kernel/Processes/Dumps.md)
 - Threads

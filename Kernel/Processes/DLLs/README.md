@@ -1,4 +1,8 @@
 # [Dynamic-Link Libraries](https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-libraries)
+[LoadLibrary深入分析\_xdesk的专栏-CSDN博客\_loadlibrary](https://blog.csdn.net/xiangbaohui/article/details/103743201)
+
+[DLL与UEFI的故事之一：Windows下运行Dll的三种方式 - 知乎](https://zhuanlan.zhihu.com/p/30000572)
+
 ## DLL injection
 **DLL injection** is a technique used for running code within the address space of another process by forcing it to load a dynamic-link library.[^inject-wiki]
 
