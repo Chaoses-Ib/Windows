@@ -21,6 +21,9 @@
 - [Rust for Windows](https://github.com/microsoft/windows-rs)
 - [The C++ Windows SDK projection](https://github.com/microsoft/cppwin32)
 
+## API sets
+Windows 8+
+
 ## Bindings
 ### .NET
 - [C#/Win32 P/Invoke Source Generator](https://github.com/microsoft/CsWin32)

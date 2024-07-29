@@ -42,6 +42,13 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution 
 ```
 And reboot.
 
+Cannot be directly used for DLL hijacking: loading the original DLL with absolute path will actually load the hijacked one. With export forwarding, this will even lead to infinite load and get `0xc000007b` error.
+- Copy the original DLL and rename it.
+- Copy the original DLL and patch it.
+  - Compatibility problem
+- API sets
+- Hook `LoadLibrary()`
+
 [DLL/COM Redirection on Windows - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/sbscs/dll-com-redirection-on-windows)
 
 [Why is DotLocal redirection applied even if the exe has a manifest - Stack Overflow](https://stackoverflow.com/questions/55668163/why-is-dotlocal-redirection-applied-even-if-the-exe-has-a-manifest)
