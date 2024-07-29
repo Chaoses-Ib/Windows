@@ -110,4 +110,8 @@ Approaches[^inject-2019]:
 - [DnsQuery](http://www.hexacorn.com/blog/2019/06/12/code-execution-via-surgical-callback-overwrites-e-g-dns-memory-functions/)
 - SingleHandler (Ctrl-Inject)
 
+[Windows Persistence - Amr Ashraf](https://amr-git-dot.github.io/offensive/persistence/)
+
+[MahmoudZohdy/Process-Injection-Techniques: Various Process Injection Techniques](https://github.com/MahmoudZohdy/Process-Injection-Techniques)
+
 [^inject-2019]: Klein, Amit, Itzik Kotler, and Safebreach Labs. “Windows Process Injection in 2019,” n.d., 34.

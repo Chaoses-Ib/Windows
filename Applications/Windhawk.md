@@ -31,6 +31,8 @@ API:
 - [m417z/my-windhawk-mods: My collection of Windhawk mods](https://github.com/m417z/my-windhawk-mods)
 - [Lots of great mods not in the official repo - ramensoftware/windhawk-mods - Discussion #500](https://github.com/ramensoftware/windhawk-mods/discussions/500)
 
+[Installing mods from the command-line - Issue #154 - ramensoftware/windhawk](https://github.com/ramensoftware/windhawk/issues/154)
+
 Name | Description
 --- | ---
 **[Taskbar height and icon size](https://windhawk.net/mods/taskbar-icon-size/)** | Control the taskbar height and icon size, improve icon quality (Windows 11 only)

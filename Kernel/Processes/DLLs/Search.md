@@ -53,6 +53,9 @@ Cannot be directly used for DLL hijacking: loading the original DLL with absolut
 
 [Why is DotLocal redirection applied even if the exe has a manifest - Stack Overflow](https://stackoverflow.com/questions/55668163/why-is-dotlocal-redirection-applied-even-if-the-exe-has-a-manifest)
 
+## API sets
+### API set overriding
+
 ## SxS manifest redirection
 [DLL redirection using manifests - Stack Overflow](https://stackoverflow.com/questions/2100973/dll-redirection-using-manifests)
 > Basically when the executable is loaded Windows collects all the related manifests that are linked using the identity and dependency elements. Then for each `file` element contained in the manifest files, it adds an entry into the activation context:
