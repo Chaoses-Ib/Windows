@@ -44,6 +44,11 @@ And reboot.
 
 [DLL/COM Redirection on Windows - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/sbscs/dll-com-redirection-on-windows)
 
+## Known DLLs
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\KnownDLLs`
+
+[KnownDLLs](KnownDLLs.reg)
+
 ## Alternate Search Order
 `LoadLibraryEx` with `LOAD_WITH_ALTERED_SEARCH_PATH`
 
