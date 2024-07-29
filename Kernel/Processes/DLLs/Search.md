@@ -44,6 +44,30 @@ And reboot.
 
 [DLL/COM Redirection on Windows - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/sbscs/dll-com-redirection-on-windows)
 
+[Why is DotLocal redirection applied even if the exe has a manifest - Stack Overflow](https://stackoverflow.com/questions/55668163/why-is-dotlocal-redirection-applied-even-if-the-exe-has-a-manifest)
+
+## SxS manifest redirection
+[DLL redirection using manifests - Stack Overflow](https://stackoverflow.com/questions/2100973/dll-redirection-using-manifests)
+> Basically when the executable is loaded Windows collects all the related manifests that are linked using the identity and dependency elements. Then for each `file` element contained in the manifest files, it adds an entry into the activation context:
+> ```c
+> 'name attribute of file element' -> 'absolute path of manifest file' + 'name attribute of file element'
+> ```
+> Now when a load library call is made, it searches the activation context map for a key that matches the path argument of load library, and then calls `Loadlibrary` with the value for that key.
+
+[DLL file loaded twice with DLL redirection through manifest - Stack Overflow](https://stackoverflow.com/questions/2147729/dll-file-loaded-twice-with-dll-redirection-through-manifest/5423561)
+```xml
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+    <file name="python25.dll" />
+</assembly>
+```
+
+[Intercepted: Windows Hacking via DLL Redirection - EH-Net Online Mag](https://web.archive.org/web/20150915101918/https://www.ethicalhacker.net/columns/heffner/intercepted-windows-hacking-via-dll-redirection)
+
+[Side-by-side assembly - Wikipedia](https://en.wikipedia.org/wiki/Side-by-side_assembly)
+
+[c# - How to provide a private Side by Side manifest that correctly locates a .NET Dll as COM Provider? - Stack Overflow](https://stackoverflow.com/questions/48272723/how-to-provide-a-private-side-by-side-manifest-that-correctly-locates-a-net-dll)
+
 ## Known DLLs
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\KnownDLLs`
 
