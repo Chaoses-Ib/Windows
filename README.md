@@ -2,6 +2,8 @@
 - [Versions](Windows/Versions.md)
 - [Windows Update](Windows/Update.md)
 - [Windows Insider](Windows/Insider.md)
+- [Sources](Windows/Sources.md)
+- [Chekced Build](Windows/Chekced.md)
 
 ## Kernel
 - Traps

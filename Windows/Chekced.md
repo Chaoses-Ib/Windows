@@ -1,0 +1,4 @@
+# Chekced Build
+There is a special internal debug version of Windows called the checked build. It is a recompilation of the Windows source code with a compile-time flag defined called _DBG_, which causes compile time, conditional debugging, and tracing code to be included. Also, to make it easier to understand the machine code, the post-processing of the Windows binaries to optimize code layout for faster execution is not performed.
+
+Most recent versions of Windows have moved away from this type (`DbgPrintEx`) of debug output, however, and use a combination of either Windows preprocessor (WPP) tracing or TraceLogging technology, both of which are built on top of Event Tracing for Windows (ETW).
