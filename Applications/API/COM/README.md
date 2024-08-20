@@ -2,6 +2,12 @@
 COM is a platform-independent, distributed, object-oriented system for creating binary software components that can interact.
 
 ## Bindings
+### C++
+- [Roapi.h header - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/api/roapi/)
+
+  `runtimeobject.lib`
+  - [How to declare and link to RoInitialize,RoUninitialize,RoGetActivationFactory and HSTRING Functions in Mingw Gcc - Stack Overflow](https://stackoverflow.com/questions/16466641/how-to-declare-and-link-to-roinitialize-rouninitialize-rogetactivationfactory-an)
+
 ### Rust
 - [windows-interface](https://docs.rs/windows-interface/)
 - [windows-implement](https://docs.rs/windows-implement/)

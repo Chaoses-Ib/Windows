@@ -1,4 +1,15 @@
 # Processes
+## Creation
+- [`CreateProcessW()`](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw)
+
+[Launching process programmatically: system vs CreateProcess vs ShellExecute](https://asawicki.info/news_1767_launching_process_programmatically_system_vs_createprocess_vs_shellexecute)
+
+Rust:
+- [yozhgoor/CreateProcessW: Create and handle processes on Windows](https://github.com/yozhgoor/CreateProcessW)
+  - `current_directory` doesn't work due to dangling pointer.
+
+[→Handle inheritance](../Objects/README.md#handle-inheritance)
+
 ## Process ID
 [Wikipedia](https://en.wikipedia.org/wiki/Process_identifier#Microsoft_Windows)
 

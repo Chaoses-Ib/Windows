@@ -34,6 +34,7 @@ Windows 8+
 ### Rust
 - [windows-rs: Rust for Windows](https://github.com/microsoft/windows-rs)
   - [windows](https://microsoft.github.io/windows-docs-rs/doc/windows/)
+    - [Feature search](https://microsoft.github.io/windows-rs/features/#/master)
   - [windows-sys](https://docs.rs/windows-sys/)
   - [windows-result](https://docs.rs/windows-result/)
   - [windows-registry](https://docs.rs/windows-registry/)
@@ -112,7 +113,7 @@ Windows 8+
   - `BOOL` → `Result<()>`
   - Some pointers → references
 
-- [winapi-rs: Rust bindings to Windows API](https://github.com/retep998/winapi-rs)
+- [winapi-rs: Rust bindings to Windows API](https://github.com/retep998/winapi-rs) (discontinued)
 
   [What's the difference between the winapi and windows-sys crates in Rust? : rust](https://www.reddit.com/r/rust/comments/12b6c5u/whats_the_difference_between_the_winapi_and/)
 
