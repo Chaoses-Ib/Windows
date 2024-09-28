@@ -1,4 +1,9 @@
 # File Explorer
+- [Dijji/FileMeta: Enable Explorer in Vista, Windows 7 and later to see, edit and search on tags and other metadata for any file type](https://github.com/Dijji/FileMeta)
+- [Aeindus/IFilterShellView: Another windows shell extension that will help you filter and select with ease folder and file items in windows explorer](https://github.com/Aeindus/IFilterShellView)
+
+  跟 Listary 类似，可以搜索资源管理器列表，不过已经停更三年了。
+
 ## Open folder and select items
 - [`SHOpenFolderAndSelectItems()`](https://learn.microsoft.com/en-us/windows/win32/api/shlobj_core/nf-shlobj_core-shopenfolderandselectitems)
 

@@ -35,6 +35,9 @@ fn main() {
 }
 ```
 
+`IInterface` is `NonNull<c_void>` under the hood.
+- Use `IInterface::from_raw()` to convert `*mut c_void` to `IInterface`.
+
 ## Activation
 COM has three activation models that can be used to bring objects into memory to allow method calls be invoked[^essential]:
 - Inprocess

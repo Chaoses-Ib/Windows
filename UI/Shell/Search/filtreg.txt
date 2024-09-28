@@ -1,0 +1,140 @@
+Filters loaded by extension:
+
+
+Filters loaded by class:
+Internet Shortcut
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{EA7BAE71-FB3B-11CD-A903-00AA00510EA3}
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+{EA7BAE70-FB3B-11CD-A903-00AA00510EA3}
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+rtf persistent handler for mapi email
+	Filter: RTF Filter (%systemroot%\system32\rtffilt.dll)
+
+
+{ce8dbe60-d37a-4bdd-ab3a-399e69489182}
+	Filter: RTF Filter (%systemroot%\system32\rtffilt.dll)
+
+
+{BD70C020-2D24-11D0-9110-00004C752752}
+	Filter: HTML filter (%systemroot%\system32\nlhtml.dll)
+
+
+Microsoft OneNote Section
+	Filter: Microsoft OneNote Filter (C:\PROGRA~1\MICROS~2\Office16\ONFILTER.DLL)
+
+
+{9ED4692C-90F0-11D1-BA0F-00A0C906B239}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{9E704F44-90F0-11D1-BA0F-00A0C906B239}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{961C1130-89AD-11CF-88A1-00AA004B9986}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{95876EB0-90F0-11D1-BA0F-00A0C906B239}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+.url File Persistent Handler
+	Filter: Favorites IFilter (C:\Windows\System32\ieframe.dll)
+
+
+{8C9E8E1C-90F0-11D1-BA0F-00A0C906B239}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{89BCB7A6-6119-101A-BCB7-00DD010655AF}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{89BCB7A5-6119-101A-BCB7-00DD010655AF}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{89BCB7A4-6119-101A-BCB7-00DD010655AF}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{87DB1ADA-AA39-11D1-829F-00A0C906B239}
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+{7F73B8F6-C19C-11D0-AA66-00C04FC2EDDC}
+	Filter: HTML filter (%systemroot%\system32\nlhtml.dll)
+
+
+{73FDDC80-AEA9-101A-98A7-00AA00374959}
+	Filter: RTF Filter (%systemroot%\system32\rtffilt.dll)
+
+
+Microsoft PowerPoint 97-2003 Slide
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+Microsoft PowerPoint 97-2003 Presentation
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+XML Document
+	Filter: XML filter (%systemroot%\system32\xmlfilter.dll)
+
+
+MIME Filter PersistentHandler
+	Filter: MIME Filter (%systemroot%\system32\mimefilt.dll)
+
+
+text persistent handler for mapi email
+	Filter: Plain Text filter (%systemroot%\system32\query.dll)
+
+
+HTML Document
+	Filter: HTML filter (%systemroot%\system32\nlhtml.dll)
+
+
+Microsoft OneNote Windows Desktop Search IFilter Base Class ID
+	Filter: Microsoft OneNote Windows Desktop Search IFilter (C:\PROGRA~1\MICROS~2\Office16\ONFILTER.DLL)
+
+
+{0482E074-C5B7-101A-82E0-08002B36A333}
+	Filter: Null filter (%systemroot%\system32\query.dll)
+
+
+html persistent handler for mapi email
+	Filter: HTML filter (%systemroot%\system32\nlhtml.dll)
+
+
+Microsoft Word 97 - 2003 Document
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+Microsoft Word 6.0 - 7.0 Document
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+Microsoft Excel Chart
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+Microsoft Excel 97-2003 Worksheet
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+Microsoft Excel Chart
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
+Microsoft Excel 95 Worksheet
+	Filter: Microsoft Office Filter (%systemroot%\system32\OffFilt.dll)
+
+
