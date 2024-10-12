@@ -1,4 +1,18 @@
-# Scoop
+# [Scoop](https://scoop.sh/)
+[GitHub](https://github.com/ScoopInstaller/Scoop)
+
+[Scoop Directory | scoop-directory](https://rasa.github.io/scoop-directory/)
+
+[Buckets](https://scoop.sh/#/buckets)
+- 1660 buckets, 43027 packages
+- [Scoop buckets by number of apps | scoop-directory](https://rasa.github.io/scoop-directory/by-apps)
+
+Discussions:
+- 2024-09 [国粹国粹， user data 丢了， firefox 你真行。我乖乖滚回 chrome - V2EX](https://www.v2ex.com/t/1074017)
+
+  > 既然用 scoop 你就应该禁止软件自身的自动更新功能，全部更新都应由 scoop 接手。我被这玩意整烦了，你要换 chrome 要是不关自动更新也会有问题，包括 vscode ，idea ，表现也是数据丢失。  
+  > 不过我当时数据没有真的丢失，而是自动更新后会在默认目录（C:/Users/xxx/AppData/Local...）又创建一个新的缓存目录。
+
 ## Networks
 虽然 Scoop 本身在国内可直连，但是由于 Scoop 依赖 GitHub 来下载 Git，实际上是不可用的。
 
