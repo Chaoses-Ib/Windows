@@ -17,6 +17,10 @@ API:
 - [`LoadIFilter()` (ntquery.h)](https://learn.microsoft.com/en-us/windows/win32/api/ntquery/nf-ntquery-loadifilter)
   - The path can include a full filename or only the file name extension; for example, ".ext".
   - [`IFILTER_INIT`](https://learn.microsoft.com/en-us/windows/win32/api/filter/ne-filter-ifilter_init)
+  - Performance: ~10000 CPS
+    - Nonexisting files: 100us
+    - .txt: 150us
+    - Unsupported files: 40us
 
   [c# - LoadIFilter() fails on all PDFs (but MS's filtdump.exe doesn't.) - Stack Overflow](https://stackoverflow.com/questions/7177953/loadifilter-fails-on-all-pdfs-but-mss-filtdump-exe-doesnt)
   > You may want to see [this blog post](http://zabkat.com/blog/adobe-ifilter-exposed.htm). In short, v10 of Adobe's PDF filter uses a whitelist of applications allowed to use the filter, including Microsoft's diagnostic tools like `filtdump.exe`, supposedly as a "security measure".
@@ -77,6 +81,12 @@ Rust:
 
   不知道是只能搜文件名还是内容也可以
 - [WordPerfectIndexer: A Windows Search IFilter to index text from WordPerfect documents](https://github.com/SunburstApps/WordPerfectIndexer)
+
+## Index
+`C:\ProgramData\Microsoft\Search\Data\Applications\Windows`
+- ESE -> SQLite (but not using FTS)
+
+[SIDR: Search Index Database Reporter](https://github.com/strozfriedberg/sidr)
 
 
 [^explorer-wiki]: [File Explorer - Wikipedia](https://en.wikipedia.org/wiki/File_Explorer)
