@@ -6,6 +6,10 @@
 Blogs:
 - [Windows Search Platform](https://devblogs.microsoft.com/windows-search-platform/)
 
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\Gathering Manager\DisableBackoff`
+
+[Windows "系统索引"辅助工具 - 问题求助❓ - 小众软件官方论坛](https://meta.appinn.net/t/topic/61361)
+
 ## [Filter handlers](https://docs.microsoft.com/en-us/windows/win32/search/-search-3x-wds-extidx-overview)
 [Wikipedia](https://en.wikipedia.org/wiki/IFilter)
   
