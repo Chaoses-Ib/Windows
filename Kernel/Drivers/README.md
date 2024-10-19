@@ -1,7 +1,5 @@
 # Drivers
 ## Development
-SDK: [Windows Driver Kit](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk) (previously Driver Development Kit)
-
 Frameworks:
 1. Windows NT Driver Model
    
@@ -18,6 +16,30 @@ Rust:
 
 Tools:
 - Compuware DriverStudio (discontinued)
+
+### [Windows Driver Kit](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk)
+[Wikipedia](https://en.wikipedia.org/wiki/Windows_Driver_Kit)
+
+Windows Driver Kit (WDK), previously Driver Development Kit (DDK)
+
+- Just installing `Windows Driver Kit` in Visual Studio is not enough
+
+- > A full kit build string includes as its last two components, the build number and a QFE (Quick Fix Engineering) value. For example, 10.0.22621.2428 has a build number of 22621, and a QFE value of 2428.
+  > 
+  > To build a driver, the build number of your SDK installation must match the build number of your WDK installation. The QFE values does not need to match unless your driver uses functionality that is only available in the headers included with a later QFE.
+
+- `Building 'MyDriver' with toolset 'WindowsKernelModeDriver10.0' and the 'Windows Driver' target platform.`
+
+  If specified WDK is not supported, there will just be include header and macro (`_AMD64_`) errors instead of project config errors.
+
+- `<WindowsTargetPlatformVersion>` cannot use `$(LatestTargetPlatformVersion)`, but specific versions like `10.0.26100.0`?
+
+- [Previous WDK versions and other downloads - Windows drivers | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/drivers/other-wdk-downloads)
+  - Windows 7~8.1: SDK/WDK 10.0.22000 + VS 2019
+    
+    WDK 10.0.22000 cannot be used with VS 2022 even targeting Windows 10? So we must install different WDKs for VS 2019 and VS 2022?
+
+    [The Windows Driver Kit and Visual Studio 2022 -- OSR](https://www.osr.com/blog/2022/09/21/the-windows-driver-kit-and-visual-studio-2022/)
 
 ## [Installation](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/)
 ### NT

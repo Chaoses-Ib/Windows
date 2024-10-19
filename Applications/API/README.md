@@ -13,6 +13,14 @@
 
 [Turning to the past to power Windows’ future: An in-depth look at WinRT | Ars Technica](https://arstechnica.com/features/2012/10/windows-8-and-winrt-everything-old-is-new-again/)
 
+## Windows SDK
+[Wikipedia](https://en.wikipedia.org/wiki/Microsoft_Windows_SDK)
+
+- VS 2019: 10.0.16299~10.0.22000
+- VS 2022: 10.0.18362~10.0.26100
+
+[→Windows Driver Kit](../../Kernel/Drivers/README.md#windows-driver-kit)
+
 ## Win32 metadata
 [Making Win32 APIs More Accessible to More Languages - Windows Developer Blog](https://blogs.windows.com/windowsdeveloper/2021/01/21/making-win32-apis-more-accessible-to-more-languages/)
 
