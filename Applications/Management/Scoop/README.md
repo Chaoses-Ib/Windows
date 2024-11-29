@@ -13,6 +13,29 @@ Discussions:
   > 既然用 scoop 你就应该禁止软件自身的自动更新功能，全部更新都应由 scoop 接手。我被这玩意整烦了，你要换 chrome 要是不关自动更新也会有问题，包括 vscode ，idea ，表现也是数据丢失。  
   > 不过我当时数据没有真的丢失，而是自动更新后会在默认目录（C:/Users/xxx/AppData/Local...）又创建一个新的缓存目录。
 
+[hok: CLI reimplementation of Scoop in Rust](https://github.com/chawyehsu/hok)
+
+## `PATH` priority problem
+- `C:\WINDOWS\system32`
+  - `tar`
+  - `\OpenSSH`: `ssh`, ...
+
+Workarounds:
+```pwsh
+$env:PATH = "$(scoop prefix tar)\bin;" + $env:PATH
+```
+```pwsh
+$tarBin = "$(scoop prefix tar)\bin"
+if (-not $env:PATH.StartsWith("$tarBin;")) {
+    $env:PATH = "$tarBin;" + $env:PATH
+}
+```
+[windows - Select program from PATH hidden behind program of the same name in powershell - Super User](https://superuser.com/questions/1753870/select-program-from-path-hidden-behind-program-of-the-same-name-in-powershell)
+
+[provide a way to create shims with different names than the original binary - Issue #11 - ScoopInstaller/Scoop](https://github.com/ScoopInstaller/Scoop/issues/11)
+
+[Feature request: "namespacing" shims - Issue #1290 - ScoopInstaller/Scoop](https://github.com/ScoopInstaller/Scoop/issues/1290)
+
 ## Networks
 虽然 Scoop 本身在国内可直连，但是由于 Scoop 依赖 GitHub 来下载 Git，实际上是不可用的。
 
