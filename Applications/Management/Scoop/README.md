@@ -16,26 +16,7 @@ Discussions:
 [hok: CLI reimplementation of Scoop in Rust](https://github.com/chawyehsu/hok)
 
 ## `PATH` priority problem
-- `C:\WINDOWS\system32`
-  - `tar`
-  - `\OpenSSH`: `ssh`, ...
-
-Workarounds:
-- Temporarily
-  ```pwsh
-  $env:PATH = "$(scoop prefix tar)\bin;" + $env:PATH
-  ```
-  ```pwsh
-  $tarBin = "$(scoop prefix tar)\bin"
-  if (-not $env:PATH.StartsWith("$tarBin;")) {
-      $env:PATH = "$tarBin;" + $env:PATH
-  }
-  ```
-  [windows - Select program from PATH hidden behind program of the same name in powershell - Super User](https://superuser.com/questions/1753870/select-program-from-path-hidden-behind-program-of-the-same-name-in-powershell)
-
-- Permanently
-
-  Add/move scoop paths to the beginning of the system environment variable `PATH` (not the user one).
+[→User environment variables](../../../Kernel/Processes/Environment%20Variables.md#user-environment-variables)
 
 [provide a way to create shims with different names than the original binary - Issue #11 - ScoopInstaller/Scoop](https://github.com/ScoopInstaller/Scoop/issues/11)
 
