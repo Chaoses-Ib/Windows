@@ -30,6 +30,7 @@
 - [Drivers](Kernel/Drivers/README.md)
 - Devices
   - [Time](Kernel/Devices/Time/README.md)
+- [→Networks](<https://github.com/Chaoses-Ib/Networks/tree/main?tab=readme-ov-file#os:~:text=OS-,Windows,-Windows%20Sockets%20(Winsock>)
 
 ## [Subsystems](Subsystems/README.md)
 - [Ntdll.dll](Subsystems/Ntdll.dll.md)
@@ -39,7 +40,7 @@
 - [Windows.h](Subsystems/Windows/Windows.h.md)
 
 ### Windows Subsystem for Linux 2
-- [Networks](Subsystems/WSL%202/Networks.md)
+- [→Networks](https://github.com/Chaoses-Ib/Networks/blob/main/OS/WSL/README.md)
 - [Windows Subsystem for Android](Subsystems/WSL%202/WSA.md)
 
 ## Media
