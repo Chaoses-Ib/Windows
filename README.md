@@ -39,9 +39,10 @@
 - [Windows 32-bit on Windows 64-bit (WoW64)](Subsystems/Windows/WoW64.md)
 - [Windows.h](Subsystems/Windows/Windows.h.md)
 
-### Windows Subsystem for Linux 2
+### [Windows Subsystem for Linux 2 (WSL2)](Subsystems/WSL2/README.md)
+- [→Kernel](https://github.com/Chaoses-Ib/Linux/blob/main/Distributions/WSL2/README.md)
 - [→Networks](https://github.com/Chaoses-Ib/Networks/blob/main/OS/WSL/README.md)
-- [Windows Subsystem for Android](Subsystems/WSL%202/WSA.md)
+- [Windows Subsystem for Android](Subsystems/WSL2/WSA.md)
 
 ## Media
 ### Graphics
