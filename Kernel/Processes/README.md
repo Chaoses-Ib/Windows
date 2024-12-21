@@ -10,6 +10,9 @@ Rust:
 
 [→Handle inheritance](../Objects/README.md#handle-inheritance)
 
+## Exit
+### [→Exit codes](https://github.com/Chaoses-Ib/Linux/blob/main/Kernel/Processes/Exit.md#exit-codes)
+
 ## Process ID
 [Wikipedia](https://en.wikipedia.org/wiki/Process_identifier#Microsoft_Windows)
 
@@ -96,7 +99,7 @@ Tools:
   [Powershell how to get the ParentProcessID by the ProcessID - Stack Overflow](https://stackoverflow.com/questions/33911332/powershell-how-to-get-the-parentprocessid-by-the-processid)
 
 ## Process injection
-Approaches[^inject-2019]:
+Approaches[^kleinWindowsProcessInjection]:
 - [DLL injection](DLLs/README.md#dll-injection)
 - [COM hijacking](../../Applications/API/COM/README.md#hijacking)
 - Thread
@@ -125,4 +128,4 @@ Approaches[^inject-2019]:
 
 [MahmoudZohdy/Process-Injection-Techniques: Various Process Injection Techniques](https://github.com/MahmoudZohdy/Process-Injection-Techniques)
 
-[^inject-2019]: Klein, Amit, Itzik Kotler, and Safebreach Labs. “Windows Process Injection in 2019,” n.d., 34.
+[^kleinWindowsProcessInjection]: Klein, A., Kotler, I., & Labs, S. (n.d.). Windows Process Injection in 2019. 34.

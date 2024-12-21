@@ -14,6 +14,7 @@
   - [Dynamic-Link Libraries](Kernel/Processes/DLLs/README.md)
     - [DLL Search Order](Kernel/Processes/DLLs/Search.md)
   - [Scheduling](Kernel/Processes/Scheduling/README.md)
+  - [Console](Kernel/Processes/Console/README.md)
   - [Dumps](Kernel/Processes/Dumps.md)
 - Threads
   - [Synchronization](Kernel/Threads/Sync/README.md)
