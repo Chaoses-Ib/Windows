@@ -11,3 +11,31 @@
 
 ## Tools
 - [Reset Windows Update Tool: Troubleshooting Tool with Windows Updates (Developed in Dev-C++).](https://github.com/ManuelGil/Reset-Windows-Update-Tool)
+
+## Windows Server
+[In-place OS upgrade (feature update)](https://learn.microsoft.com/en-us/windows-server/get-started/install-upgrade-migrate#in-place-os-upgrade-feature-update):
+- Media (ISO/USB/DVD)
+  - `Keep personal files and apps` is disabled (because of evaluation image?)
+
+    [Fix Permission Error and Grayed Out Keep Files in Windows Server](https://www.dozersystems.com/fix-you-dont-have-permission-error-and-grayed-out-keep-personal-files-and-apps-option-during-windows-server-in-place-upgrade/)
+    ```cmd
+    dism /mount-wim /wimfile:c:\ISO\SERV2016\sources\install.wim /mountdir:c:\mount /index:2
+    dism /image:c:\mount /get-currentedition
+    dism /image:c:\mount /get-targeteditions
+    dism /image:c:\mount /set-edition:ServerStandard
+    dism /unmount-wim /mountdir:c:\mount /commit
+    ```
+    [Keep personal files and apps option greyed out when upgrading from - Microsoft Community](https://answers.microsoft.com/en-us/windowserver/forum/all/keep-personal-files-and-apps-option-greyed-out/15b6fd41-6cce-4769-8fc0-b42c7f4c65f3)
+
+    [Preserving Files and Settings during Windows Server 2019 Standard to 2022 Standard Upgrade - Microsoft Q&A](https://learn.microsoft.com/en-us/answers/questions/1817866/preserving-files-and-settings-during-windows-serve)
+
+    [Upgrade windows server to 2025 : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1gyocoo/upgrade_windows_server_to_2025/)
+
+  - Acquiring update may cause crash before restart
+
+- Windows Update (v2025)
+
+  [哇！微软宣布Windows Server 2025将支持旧版本直接升级(2012-2022) -- 蓝点网](https://www.landiannews.com/archives/103145.html)
+
+  [Microsoft on Windows Server 2025 in-place upgrade (KB5044284) : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1gnketk/microsoft_on_windows_server_2025_inplace_upgrade/)
+  - [这真的过于离谱！部分企业运行的Windows Server 2022被自动升级到2025 -- 蓝点网](https://www.landiannews.com/archives/106464.html)
