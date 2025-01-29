@@ -78,6 +78,14 @@ Or just [run the service as a console program](#console).
 [Interactive Services - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/services/interactive-services)
 > Services cannot directly interact with a user as of Windows Vista.
 
+This means if a SSH server is running as service, the processes it spawns will not be shown on the desktop.
+
+`CreateProcessAsCurrentUser`:
+- .NET
+  - [murrayju/CreateProcessAsUser: Creates a process in a different Windows session](https://github.com/murrayju/CreateProcessAsUser)
+- [.net - How to start a process from windows service into currently logged in user's session - Stack Overflow](https://stackoverflow.com/questions/4278373/how-to-start-a-process-from-windows-service-into-currently-logged-in-users-sess)
+- [windows - create process in user session from service - Stack Overflow](https://stackoverflow.com/questions/26913172/create-process-in-user-session-from-service)
+
 ## Windows Service Hardening
 [Wikipedia](https://en.wikipedia.org/wiki/Security_and_safety_features_new_to_Windows_Vista#Windows_Service_Hardening)
 
