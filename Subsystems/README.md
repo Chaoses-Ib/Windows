@@ -1,5 +1,6 @@
 # Subsystems
 - [Windows](Windows/README.md)
+- [Wine](Wine/README.md)
 - Windows Subsystem for Linux (WSL)
   - WSL 2
   - WSL 1
