@@ -1,4 +1,6 @@
 # Security
+[EfiGuard: Disable PatchGuard and Driver Signature Enforcement at boot time](https://github.com/Mattiwatti/EfiGuard)
+
 ## Security system components
 [^winter]
 ![](images/Security-components.png)

@@ -26,10 +26,11 @@ Credentials:
 - Ticket-granting ticket (used by the Kerberos protocol)
 
 ## Performance impacts
-VBS can cause performance drops of 5% to 30%.[^pcgamer][^toms]
+VBS can cause performance drops of 5% to 30%.[^pcgamer][^toms] 对于非 game 的应用的影响可能较小，例如 0.5% 左右（24H2 + 7900X）[^overclock]。
 
 [^pcgamer]: [Windows 11 will hobble gaming performance by default on some prebuilt PCs | PC Gamer](https://www.pcgamer.com/windows-11-pcs-can-hobble-gaming-performance/)
 [^toms]: [Benchmarked: Do Windows 11’s Security Features Really Hobble Gaming Performance? | Tom's Hardware](https://www.tomshardware.com/news/windows-11-gaming-benchmarks-performance-vbs-hvci-security)
+[^overclock]: [ComputerHardware/Processors/Performance/Overclocking.xlsx at main - Chaoses-Ib/ComputerHardware](https://github.com/Chaoses-Ib/ComputerHardware/blob/main/Processors/Performance/Overclocking.xlsx)
 
 ## Configuration
 [^ms-integrity][^ms-credential]
@@ -61,13 +62,20 @@ bcdedit /set vsmlaunchtype off
 bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} device partition=X:
 mountvol X: /d
 ```
-- [`mountvol X: /s` The parameter is incorrect. - Issue #6858 - MicrosoftDocs/windows-itpro-docs](https://github.com/MicrosoftDocs/windows-itpro-docs/issues/6858)
+- [`mountvol X: /s` The parameter is incorrect. - Issue #6858 - MicrosoftDocs/windows-itpro-docs](https://web.archive.org/web/20201110085245/https://github.com/MicrosoftDocs/windows-itpro-docs/issues/6858)
 
   Can only be used with UEFI.
 
 However, while `bcdedit /bootsequence` works, `bcdedit /default` does not, which means we can only disable VBS for the next boot. A workaround is to use Task Scheduler to run `bcdedit.exe /bootsequence {0cb3b571-2f2e-4343-a879-d86a476d7215}` after every boot.
 
 At boot you should see the "Virtualization Based Security Opt-out Tool" asking you whether to disable VBS. Press Win or F3 to continue and reboot to the real system.
+
+[EfiGuard: Disable PatchGuard and Driver Signature Enforcement at boot time](https://github.com/Mattiwatti/EfiGuard)
+- Cannot disable HVCI due to HVCI running at a greater privilege level
+- Loader / UEFI Driver Entry
+- [VbsPolicyDisabledEFI: EFI driver which disables Virtualization-based Security (VBS) in Microsoft Windows](https://github.com/valinet/VbsPolicyDisabledEFI)
+  - ~~https://github.com/valinet/VbsPolicyDisableEFI~~
+
 
 [^winter]: *Windows Internals*
 
