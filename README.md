@@ -1,5 +1,6 @@
 # [Windows](Windows.md)
 - [Versions](Windows/Versions.md)
+- [Deployment](Windows/Deployment.md)
 - [Windows Update](Windows/Update.md)
 - [Windows Insider](Windows/Insider.md)
 - [Sources](Windows/Sources.md)
@@ -26,6 +27,7 @@
 - [Security](Kernel/Security/README.md)
   - [Virtualization-Based Security](Kernel/Security/Virtualization.md)
   - [User Interface Privilege Isolation](Kernel/Security/UIPI.md)
+- [Users](Kernel/Users/README.md)
 - Configuration
   - [Registry](Kernel/Configuration/Registry/README.md)
 - [Drivers](Kernel/Drivers/README.md)

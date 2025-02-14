@@ -1,6 +1,7 @@
 # Windows Versions
 [List of Microsoft Windows versions - Wikipedia](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions)
 
+Binaries:
 - [Winbindex: An index of Windows binaries, including download links for executables such as exe, dll and sys files](https://github.com/m417z/winbindex) ([Website](https://winbindex.m417z.com/))
 
   [Introducing Winbindex - the Windows Binaries Index -- m417z / blog -- A Blog About Stuff](https://m417z.com/Introducing-Winbindex-the-Windows-Binaries-Index/)
@@ -11,6 +12,38 @@
 - [Windows Binary Repository](https://github.com/16Hexa/windows-binaries)
 
 [How to get WinBuild info using C/C++ - Stack Overflow](https://stackoverflow.com/questions/67984863/how-to-get-winbuild-info-using-c-c)
+
+## Windows 10
+[Editions](https://en.wikipedia.org/wiki/Windows_10_editions):
+- Home
+- Pro / Pro Education
+- Pro for Workstations
+- Education
+- Enterprise
+  - Enterprise LTSC
+- IoT Enterprise
+  - IoT Enterprise LTSC
+
+## Windows 11
+[Wikipedia](https://en.wikipedia.org/wiki/Windows_11)
+
+[Features new to Windows 11 - Wikipedia](https://en.wikipedia.org/wiki/Features_new_to_Windows_11)
+- Shell
+  - WinUI / Fluent Design
+  - Taskbar
+  - Start menu
+  - File Explorer
+- Microsoft Store: Win32, PWA
+- WSA
+- Touch improvements
+- Copilot
+- ARM64
+- Require TPM 2.0, VBS, POPCNT
+
+[List of features removed in Windows 11 - Wikipedia](https://en.wikipedia.org/wiki/List_of_features_removed_in_Windows_11)
+- Taskbar
+- x86-32
+- 16-bit (NTVDM)
 
 ## Windows Server
 [Windows Server documentation | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/)
