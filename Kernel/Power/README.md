@@ -31,6 +31,11 @@ REM reg delete "HKLM\System\CurrentControlSet\Control\Power" /v PlatformAoAcOver
 
 You can disable hibernation completely and gain some disk space by running `powercfg /h off` from an elevated command prompt.[^winter]
 
+Hibernation is disabled on Windows 10+ by default. And `powercfg /h on` may not work as expected. Instead, one can enable hibernate in the control panel:  
+[How can one Enable Hibernate in Windows 11 since the newest updates in - Microsoft Community](https://answers.microsoft.com/en-us/windows/forum/all/how-can-one-enable-hibernate-in-windows-11-since/2545b402-4884-45b3-9fda-459bce2333d7)
+
+[Wait what happened to the hibernate option?! : r/Windows11](https://www.reddit.com/r/Windows11/comments/1eepaef/wait_what_happened_to_the_hibernate_option/)
+
 ## Fast startup (S4)
 
 
