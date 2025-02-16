@@ -50,6 +50,8 @@ VBS can cause performance drops of 5% to 30%.[^pcgamer][^toms] 对于非 game �
       - Virtualization Based Protection of Code Integrity
       - Credential Guard Configuration
 
+Kernel-Boot event 153: `Virtualization-based security (policies: VBS Enabled,VSM Required) is enabled due to HyperV.`
+
 To disable VBS without disabling Hyper-V, run the following commands after turning off all VBS Group Policy and registry settings[^ms-credential][^disable-ms-qa][^disable-su]:
 ```cmd
 mountvol X: /s
