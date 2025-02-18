@@ -63,3 +63,11 @@ Tool:
   - [Unsigned Driver installer Utility for Windows](https://github.com/fawazahmed0/windows-unsigned-driver-installer)
 - [qmk_installer: A Windows Driver Installer for QMK supported USB devices](https://github.com/fredizzimo/qmk_driver_installer)
 - EzDriverInstaller (DriverStudio)
+
+## Management
+Tools:
+- [Driver Store Explorer](https://github.com/lostindark/DriverStoreExplorer) (RAPR)
+  - `scoop install driverstoreexplorer`
+  - 2019-08-09~ v0.10.51.0
+- [DriverView: Loaded Windows Drivers List](https://www.nirsoft.net/utils/driverview.html)
+- [InstalledDriversList: View the installed drivers list on Windows operating system](https://www.nirsoft.net/utils/installed_drivers_list.html)
