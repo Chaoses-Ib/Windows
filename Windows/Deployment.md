@@ -43,11 +43,4 @@ Tools:
 
 ## [→Users](../Kernel/Users/README.md#installation)
 
-## Licensing
-- [Microsoft Activation Scripts (MAS)](https://massgrave.dev/)
-  - `irm https://get.activated.win | iex`
-  - HWID
-    - All activations can be linked to a Microsoft account without any issues.
-  - TSforge
-  - KMS38
-  - Online KMS
+## [→Licensing](../Kernel/Security/Licensing.md#windows)

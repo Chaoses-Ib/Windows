@@ -27,6 +27,7 @@
 - [Security](Kernel/Security/README.md)
   - [Virtualization-Based Security](Kernel/Security/Virtualization.md)
   - [User Interface Privilege Isolation](Kernel/Security/UIPI.md)
+  - [Licensing](Kernel/Security/Licensing.md)
 - [Users](Kernel/Users/README.md)
   - [Microsoft Accounts](Kernel/Users/Microsoft.md)
 - Configuration
