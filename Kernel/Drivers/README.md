@@ -71,3 +71,5 @@ Tools:
   - 2019-08-09~ v0.10.51.0
 - [DriverView: Loaded Windows Drivers List](https://www.nirsoft.net/utils/driverview.html)
 - [InstalledDriversList: View the installed drivers list on Windows operating system](https://www.nirsoft.net/utils/installed_drivers_list.html)
+
+## [→Update](../../Windows/Update.md#drivers)

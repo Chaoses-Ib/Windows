@@ -9,8 +9,23 @@
 
 [Windows 11 系统更新频繁下载 0%，安装 0%， 25%卡住如何解决？ - V2EX](https://fast.v2ex.com/t/975548)
 
+## Drivers
+- `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate`
+
+- Computer Configuration > Administrative Templates
+  - Windows Components > Windows Update > Do not include drivers with Windows Update > Enabled (`ExcludeWUDriversInQualityUpdate`)
+  - System > Device Installation
+    - Prevent device metadata retrieval from the Internet > Enabled
+
+      > The metadata setting will prevent identification and download of correct device icons. Minor thing but home users may bring it up.
+    - Specify search order for device driver source locations > Enabled (Do not search Windows Update)
+
+- Rollbacking a driver will prevent Windows from updating it again, though uninstalling it won't.
+
+[How do I stop windows from f\*\*king up my drivers every few weeks? : r/pcmasterrace](https://www.reddit.com/r/pcmasterrace/comments/12ggm4t/how_do_i_stop_windows_from_fking_up_my_drivers/)
+
 ## Tools
-- [Reset Windows Update Tool: Troubleshooting Tool with Windows Updates (Developed in Dev-C++).](https://github.com/ManuelGil/Reset-Windows-Update-Tool)
+- [Reset Windows Update Tool: Troubleshooting Tool with Windows Updates (Developed in Dev-C++).](https://github.com/ManuelGil/Reset-Windows-Update-Tool) (discontinued)
 
 ## Windows Server
 [In-place OS upgrade (feature update)](https://learn.microsoft.com/en-us/windows-server/get-started/install-upgrade-migrate#in-place-os-upgrade-feature-update):
