@@ -28,6 +28,8 @@
   - [Virtualization-Based Security](Kernel/Security/Virtualization.md)
   - [User Interface Privilege Isolation](Kernel/Security/UIPI.md)
   - [Licensing](Kernel/Security/Licensing.md)
+  - [Microsoft Defender](Kernel/Security/Defender.md)
+  - [Microsoft SmartScreen](Kernel/Security/SmartScreen.md)
 - [Users](Kernel/Users/README.md)
   - [Microsoft Accounts](Kernel/Users/Microsoft.md)
 - Configuration
