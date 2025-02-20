@@ -6,12 +6,13 @@
 
 [IME Conversion Mode Values - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/intl/ime-conversion-mode-values)
 
-[How to delete a keyboard layout in Windows 10 - Super User](https://superuser.com/questions/957552/how-to-delete-a-keyboard-layout-in-windows-10)
+Removing: [How to delete a keyboard layout in Windows 10 - Super User](https://superuser.com/questions/957552/how-to-delete-a-keyboard-layout-in-windows-10)
 - `HKEY_USERS\.DEFAULT\Keyboard Layout\Preload`
 - `HKEY_CURRENT_USER\Keyboard Layout\Preload`
 - `HKEY_USERS\.DEFAULT\Control Panel\International\User Profile`
 - `HKEY_USERS\.DEFAULT\Control Panel\International\User Profile System Backup`
 - Deny `SYSTEM` permissons to prevent these from reappearing.
+- Deleting keys in `Control Panel` is necessary.
 
 尽管可以删除指定输入法，但无法指定输入法的切换顺序。
 
