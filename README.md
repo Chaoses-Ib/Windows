@@ -74,6 +74,8 @@
 - [Sleeping](UI/CLI/Sleeping.md)
 
 ### GUI
+- [Desktops](UI/GUI/Desktops/README.md)
+  - [Remote](UI/GUI/Desktops/Remote.md)
 - [Windows](UI/GUI/Windows/README.md)
   - [Foreground Windows](UI/GUI/Windows/Foreground.md)
 - Messages
