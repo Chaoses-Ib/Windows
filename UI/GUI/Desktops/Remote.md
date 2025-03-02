@@ -37,6 +37,27 @@
   - Firefox: One session per profile
   - OneNote
 
+- WDDM graphics display driver
+
+  [PSA: If you're having issues connecting via RDP after updating to 20H2 (2004), disable WDDM. : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/jni86j/psa_if_youre_having_issues_connecting_via_rdp/)
+
+  [100 CPU after disconnected user - Issue #827 - stascorp/rdpwrap](https://github.com/stascorp/rdpwrap/issues/827#issuecomment-530970140)
+
+  [Reconnecting to session not working (Win 10 Home 1903) - Issue #858 - stascorp/rdpwrap](https://github.com/stascorp/rdpwrap/issues/858#issuecomment-523192537)
+
+  [Windows 10 v21H1 and RDP WDDM Bug - Windows - Spiceworks Community](https://community.spiceworks.com/t/windows-10-v21h1-and-rdp-wddm-bug/800474)
+
+- Network detection
+
+  [Windows 11 24H2 - RDP session hangs on logon : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1gbq4y7/windows_11_24h2_rdp_session_hangs_on_logon/)
+  > Local Computer Policy> Computer Configuration > Administrative Templates > Windows Components > Remote Desktop Services > Remote Desktop Session Host > Connections > **Select network detection on the server** - set to **Enabled, Turn off Connect Time Detect and Continuous Network Detect**
+
+  > Just turning off the continuous detection fixed the problem for me as well. No need to turn off the connect time detection.
+
+  `REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v SelectNetworkDetect /t reg_dword /d 0x00000003 /f`
+
+  [RDP connection immediately gets stuck at blurry login screen - Microsoft Q&A](https://learn.microsoft.com/en-us/answers/questions/1141363/rdp-connection-immediately-gets-stuck-at-blurry-lo)
+
 Tools:
 - Task Manager: Users
   - Processes
