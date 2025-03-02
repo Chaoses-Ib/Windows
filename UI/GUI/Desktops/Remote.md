@@ -1,4 +1,14 @@
 # Remote Desktops
+- [Sunshine: Self-hosted game stream host for Moonlight.](https://github.com/LizardByte/Sunshine)
+
+[You don't need Spacedesk, we already have Spacedesk at home (or how I stopped worrying and learned to use two iPads at once) - Discussion Hub / Home Cockpit Builders - Microsoft Flight Simulator Forums](https://forums.flightsimulator.com/t/you-dont-need-spacedesk-we-already-have-spacedesk-at-home-or-how-i-stopped-worrying-and-learned-to-use-two-ipads-at-once/588388)
+
+[Spacedesk: An alternative that can be worth trying : r/cloudygamer](https://www.reddit.com/r/cloudygamer/comments/u2z5r6/spacedesk_an_alternative_that_can_be_worth_trying/)
+
+[Alternative to Spacedesk - Discussion Hub / Home Cockpit Builders - Microsoft Flight Simulator Forums](https://forums.flightsimulator.com/t/alternative-to-spacedesk/507938)
+
+[iDisplay, SpaceDesk? - PC Hardware and Related Software - ED Forums](https://forum.dcs.world/topic/165573-idisplay-spacedesk/)
+
 ## Remote Desktop Protocol (RDP)
 [Wikipedia](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol)
 
@@ -150,7 +160,35 @@ Confusing namings.
 
 ## spacedesk
 [spacedesk | Multi Monitor App | Virtual Display Screen | Software Video Wall | Multi Monitor App | Virtual Display Screen | Software Video Wall](https://spacedesk.net/)
+- Shitty animations now
+- [licensing -- spacedesk by datronicsoft](https://www.spacedesk.net/licensing/)
+- [download -- spacedesk by datronicsoft](https://www.spacedesk.net/download/#server-driver)
+- Driver Console
+- Idle: 53 MiB memory usage
+- [PERFORMANCE TUNING](https://manual.spacedesk.net/PERFORMANCETUNING.html)
+- [Videowall](https://manual.spacedesk.net/Videowall.html)
+
+Data:
+- v1.0.55 just installs into `C:\Windows\System32`...
+- v2.1.37: `C:\Program Files\datronicsoft\spacedesk`
+- Polluting `C:\Users\Public`
 
 [spacedesk安卓下载，安卓版APK | 免费下载](https://apkpure.com/cn/spacedesk-multi-monitor-display-extension-screen/ph.spacedesk.beta)
 
 再次安装，体验还不错。
+
+### Client
+- HID
+  - Mouse
+  - Touch
+  - Pen
+  - Keyboard
+- Exit remote control: `Alt+Shift` / 3 fingers tap
+- Graphics
+  - Image quality (MJPEG): 70 by default
+    - Even 100 is not lossless
+  - Color depth: YUV 4.4.4 (default), 4.2.2, 4.2.0 (recommended)
+  - FPS: 30 by default
+  - One monitor per viewer
+  - Keep display on is off by default
+- Connection loss delay is 45 seconds by default
