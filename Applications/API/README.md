@@ -47,6 +47,8 @@ Windows 8+
   [What's the difference between the winapi and windows-sys crates in Rust? : rust](https://www.reddit.com/r/rust/comments/12b6c5u/whats_the_difference_between_the_winapi_and/)
 
 - [WinSafe: Windows API and GUI in safe, idiomatic Rust.](https://github.com/rodrigocfd/winsafe)
+- [rs-winapi2: Microsoft Windows user-mode API access with clean Rust types.](https://github.com/MauriceKayser/rs-winapi2) (discontinued)
+- [winwrap: Rust-friendly Windows API wrappers](https://github.com/takubokudori/winwrap)
 
 #### [windows-rs](https://github.com/microsoft/windows-rs)
 - [windows](https://microsoft.github.io/windows-docs-rs/doc/windows/)

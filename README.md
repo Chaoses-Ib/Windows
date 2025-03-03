@@ -19,6 +19,7 @@
   - [Dumps](Kernel/Processes/Dumps.md)
 - Threads
   - [Synchronization](Kernel/Threads/Sync/README.md)
+    - [Events](Kernel/Threads/Sync/Events.md)
 - [→Memory Management](https://github.com/Chaoses-Ib/InformationSystems#memory-management)
 - [→File Systems](https://github.com/Chaoses-Ib/InformationSystems#file-systems)
 - [Power Management](Kernel/Power/README.md)

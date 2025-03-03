@@ -36,5 +36,7 @@ With Windows 10 version 1607, one such Pico provider is present: `Lxss.sys` and 
 
 [Windows WSL子系统（Windows Subsystem for Linux） | DbgTech](https://dbgtech.github.io/2017/09/06/Windows-Subsystem-Linux-internals.html)
 
+[The Linux kernel hidden inside windows 10](https://theswissbay.ch/pdf/Whitepaper/The%20Linux%20kernel%20hidden%20inside%20Windows%2010%20-%20Alex%20Ionescu.pdf)
+
 
 [^winter]: Windows Internals

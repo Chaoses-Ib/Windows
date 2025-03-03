@@ -35,14 +35,45 @@
 
 How does Ctrl+C find and kill the descendant processes? [Console process groups](#console-process-groups).
 
-Generating control events:
+[→Libraries](https://github.com/Chaoses-Ib/Linux/blob/main/Kernel/Exceptions/Signals.md#libraries)
+
+### Sending control events
 - [`GenerateConsoleCtrlEvent()`](https://learn.microsoft.com/en-us/windows/console/generateconsolectrlevent)
 
   [Sending Ctrl-C signal to another application on Windows | Coding with Titans](https://blog.codetitans.pl/post/sending-ctrl-c-signal-to-another-application-on-windows/)
 
+  [Feature request: Ability to programmatically cause `SIGINT` in child node process on Windows - Issue #35172 - nodejs/node](https://github.com/nodejs/node/issues/35172#issuecomment-696362422)
+
 - `CreateRemoteThread()` + `CtrlRoutine()`
 
   [c++ - Sending a Ctrl+C to a QProcess on Windows - Stack Overflow](https://stackoverflow.com/questions/64760376/sending-a-ctrlc-to-a-qprocess-on-windows)
+
+- Using events to mimic
+
+  Nginx:
+  - `SIGQUIT`: `ngx_quit_12345`
+  - `SIGTERM`: `ngx_stop_12345`
+  - `SIGHUP`: `ngx_reload_12345`
+  - `SIGUSR1`: `ngx_reopen_12345`
+
+Rust:
+- [sysinfo: Cross-platform library to fetch system information](https://github.com/GuillaumeGomez/sysinfo)
+  - Linux
+  - [Fix ProcessExt::kill on windows by GuillaumeGomez - Pull Request #263](https://github.com/GuillaumeGomez/sysinfo/pull/263)
+- [ctrlc-windows: Send a CTRL-C event to a Windows console application](https://github.com/thefrontside/ctrlc-windows/tree/v2)
+  - Child process
+- ~~[deno_process](https://github.com/denoland/deno/tree/main/ext/process)~~
+  
+  [feat(runtime/signal): implement SIGINT and SIGBREAK for windows by GJZwiers - Pull Request #14694 - denoland/deno](https://github.com/denoland/deno/pull/14694)
+
+  [refactor(runtime/signal): revert SIGINT and SIGBREAK \`Deno.kill\` Windows changes by dsherret - Pull Request #14865 - denoland/deno](https://github.com/denoland/deno/pull/14865)
+
+  [Reland `Deno.kill` SIGBREAK Windows changes - Issue #14866 - denoland/deno](https://github.com/denoland/deno/issues/14866)
+- [iceoryx2/iceoryx2-pal/posix/src/windows/signal.rs](https://github.com/ekxide/iceoryx2/blob/3d5f9426d1aba130c637d9c14589841eb0412a6e/iceoryx2-pal/posix/src/windows/signal.rs#L23)
+- [garden/garden-sea/src/terminate.rs](https://github.com/garden-io/garden/blob/86340df8a67ff856c347b78a1f2285d4876a8ac4/garden-sea/src/terminate.rs)
+- [Support sending signals on Windows - Issue #219 - watchexec/watchexec](https://github.com/watchexec/watchexec/issues/219)
+- ~~[Windows support by qnighy - Pull Request #18 - vorner/signal-hook](https://github.com/vorner/signal-hook/pull/18)~~
+- ~~[Add signal possibility on unix by faern - Pull Request #13 - oconnor663/shared\_child.rs](https://github.com/oconnor663/shared_child.rs/pull/13)~~
 
 ## Console process groups
 [Console Process Groups - Windows Console | Microsoft Learn](https://learn.microsoft.com/en-us/windows/console/console-process-groups)
