@@ -37,6 +37,7 @@
   - [Microsoft SmartScreen](Kernel/Security/SmartScreen.md)
 - [Users](Kernel/Users/README.md)
   - [Microsoft Accounts](Kernel/Users/Microsoft.md)
+- [Storage](Kernel/Storage/README.md)
 - Configuration
   - [Registry](Kernel/Configuration/Registry/README.md)
 - [Drivers](Kernel/Drivers/README.md)
