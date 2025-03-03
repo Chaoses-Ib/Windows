@@ -1,5 +1,6 @@
 # Remote Desktops
 - [Sunshine: Self-hosted game stream host for Moonlight.](https://github.com/LizardByte/Sunshine)
+- [1Remote: One Remote Access Manager to Rule Them All](https://github.com/1Remote/1Remote)
 
 [You don't need Spacedesk, we already have Spacedesk at home (or how I stopped worrying and learned to use two iPads at once) - Discussion Hub / Home Cockpit Builders - Microsoft Flight Simulator Forums](https://forums.flightsimulator.com/t/you-dont-need-spacedesk-we-already-have-spacedesk-at-home-or-how-i-stopped-worrying-and-learned-to-use-two-ipads-at-once/588388)
 
@@ -11,6 +12,8 @@
 
 ## Remote Desktop Protocol (RDP)
 [Wikipedia](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol)
+
+[Remote Desktop Services - Wikipedia](https://en.wikipedia.org/wiki/Remote_Desktop_Services)
 
 > Starting with WindowsXP, Microsoft locked down concurrent RDP sessions for their workstation OSes. Windows servers allow two concurrent sessions, and you can purchase terminal services CALs to increase that. Microsoft introduced this limit on purpose (it's purely artificial), so its not something that is likely get better in the future. you may be able to use a different screen sharing protocol to allow an additional session (vnc is an option for instance) or perhaps look into alternate RDP servers for windows workstations.
 
@@ -133,6 +136,39 @@ Confusing namings.
 [Can someone help explain the Microsoft Remote Desktop App mess? : r/sysadmin](https://www.reddit.com/r/sysadmin/comments/1flj69u/can_someone_help_explain_the_microsoft_remote/)
 
 [Best AVD Client? MS Remote Desktop, Azure Virtual Desktop Preview or Windows App : r/AzureVirtualDesktop](https://www.reddit.com/r/AzureVirtualDesktop/comments/1diwwwk/best_avd_client_ms_remote_desktop_azure_virtual/)
+
+### RemoteApp
+[Wikipedia](https://en.wikipedia.org/wiki/Remote_Desktop_Services#RemoteApp)
+
+- Still cannot be in the same session
+
+[Windows Compatibility](https://github.com/kimmknight/remoteapptool/wiki/Windows-Compatibility)
+
+Servers:
+- Windows Server
+
+  [Configuring RemoteApp on Windows Server -- Master da Web](https://masterdaweb.com/en/blog/configuring-remoteapp-on-windows-server/)
+- [kimmknight/remoteapptool: Create and manage RemoteApps hosted on Windows 7, 8, 10, 11, XP and Server. Generate RDP and MSI files for clients.](https://github.com/kimmknight/remoteapptool)
+  - Scoop
+    ```pwsh
+    scoop bucket add hoilc_scoop-lemon https://github.com/hoilc/scoop-lemon
+    scoop install hoilc_scoop-lemon/remoteapptool
+    ```
+  - [RAWeb: A simple web interface for your RemoteApps hosted on Windows 10, 11 and Server.](https://github.com/kimmknight/raweb)
+    - Require IIS
+
+Client:
+- Remote Desktop Connection
+  - Require to input password for every app
+  - Remote tray icons can only be shown/hidden all at once?
+- Remote Desktop
+  - Not a native window
+  - Require to input password every time
+  - Start much more processes, some duplicated, bug?
+
+[Introducing RemoteApp and Desktop Connections | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/microsoft-security-blog/introducing-remoteapp-and-desktop-connections/246803)
+
+[RemoteApp 隔离国内 Windows 毒瘤应用运行方案 - LetITFly BBS](https://bbs.letitfly.me/d/1199)
 
 ## RustDesk
 [GitHub](https://github.com/rustdesk/rustdesk)
