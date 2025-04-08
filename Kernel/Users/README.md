@@ -28,6 +28,24 @@
 
   [Win11 LTSC 安装提示"无法使用个人帐户在此登录，请改用工作或学校帐户"](https://techzhi.com/143.htm)
 
+## Auto logon
+Auto logon is disabled by default, which means startup programs (except services) will not run until the user logs in.
+
+[Configure Windows to automate logon - Windows Server | Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon)
+
+[Auto login a user at boot on Windows Server 2016? - Server Fault](https://serverfault.com/questions/840557/auto-login-a-user-at-boot-on-windows-server-2016)
+
+[Windows11 如何实现开机唤醒跳过锁屏界面？ - V2EX](https://www.v2ex.com/t/1120281)
+> 开机自动登录进入桌面  
+> 运行 `netplwiz` 之后取消选定 Users must enter a user name and password to use this computer. 点 Apply 然后在弹出的对话框里输入自动登录的用户名和密码（两次）。`netplwiz` 看不到复选框的改一下注册表，  
+> `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device ，DevicePasswordLessBuildVersion` 值改为 0
+- Can only auto logon one user
+- Windows Server 默认为 2，需要改为 0
+
+> 睡眠唤醒直接进桌面无锁屏登录  
+> 在组策略（ win+r 输入 `gpedit.msc` ）中计算机配置 > 管理模板 > 系统 > 电源管理 > 睡眠设置 >当唤醒计算机时需要密码（使用电池）（充电） 2 个都设置为禁用。  
+> 家庭版没有组策略，需要直接升级专业版，网上一些家庭版开启组策略的脚本和方法都不好使，升级专业版更简单。
+
 ## RDP
 [使用动态口令保护 Windows 远程桌面 | 中山大学网络与信息中心](https://inc.sysu.edu.cn/article/1050)
 
