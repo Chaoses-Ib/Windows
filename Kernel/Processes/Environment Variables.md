@@ -1,11 +1,15 @@
 # Environment Variables
 [Environment variables in Windows NT](https://web.archive.org/web/20111225045158/http://support.microsoft.com/kb/100843/EN-US)
 
+[Everything you never wanted to know about Win32 environment blocks](https://nullprogram.com/blog/2023/08/23/)
+
 Built-in:
 - `%ProgramFiles%`
 - `%APPDATA%`
 
 [ExpandEnvironmentStringsW()](https://learn.microsoft.com/en-us/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsw)
+
+[Comprehensive List of Environment Variables in Windows 10/11 - Michael Smith](https://mikesmith.us/comprehensive-list-of-environment-variables-in-windows-10-11/)
 
 ## User environment variables
 > User environment variables take precedence over system environment variables. The user `PATH` is appended to the system `PATH`.
@@ -64,6 +68,13 @@ Workarounds:
 
   [关于 Windows 10 环境变量的诡异情况 - V2EX](https://www.v2ex.com/t/836336)
 
+- Windows 10/11?: no limit on a user-defined environment variables, but environment blocks are limited to 2GiB, for both 32-bit and 64-bit processes
+
+  [Everything you never wanted to know about Win32 environment blocks](https://nullprogram.com/blog/2023/08/23/)
+
+  [Does Windows 11 have a 32,767 character limit for environment variables? - Super User](https://superuser.com/questions/1840269/does-windows-11-have-a-32-767-character-limit-for-environment-variables)
+  - 953.7 MiB
+
 - 当 cmd 继承的某个环境变量长于 8192 字符时，cmd 会**忽略**而不是截断它。
 
   这会导致用到 cmd 的工具在 `PATH` 长于 8192 字符时可能出现错误：
@@ -96,3 +107,6 @@ Workarounds:
   Only work in cmd, not in PowerShell.
 
 [Use fresh environment block on new terminals in Windows - Issue #47816 - microsoft/vscode](https://github.com/microsoft/vscode/issues/47816)
+
+## CMD
+[Windows Dynamic System Environment Variables](https://blog.thoughtlabs.com/blog/windows-dynamic-system-environment-variables)
