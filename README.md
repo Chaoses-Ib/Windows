@@ -69,6 +69,7 @@
 - [Keyboard](UI/HID/Keyboard/README.md)
 - [Mouse](UI/HID/Mouse/README.md)
 - [Text](UI/HID/Text/README.md)
+  - [Rime](UI/HID/Text/Rime.md)
 - [SendInput](UI/HID/SendInput.md)
 
 ### CLI

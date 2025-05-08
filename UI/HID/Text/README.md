@@ -14,7 +14,7 @@ Removing: [How to delete a keyboard layout in Windows 10 - Super User](https://s
 - Deny `SYSTEM` permissons to prevent these from reappearing.
 - Deleting keys in `Control Panel` is necessary.
 
-尽管可以删除指定输入法，但无法指定输入法的切换顺序。
+尽管可以删除指定输入法，但无法指定输入法的切换顺序，也无法只在 Win+Space 时跳过特定输入法。
 
 ## .NET
 [InputMethod Class (System.Windows.Input) | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.inputmethod)
