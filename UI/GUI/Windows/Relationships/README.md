@@ -7,14 +7,17 @@ There are many ways that a window can relate to the user or another window. A wi
 2. Owned Windows
 3. Z-Order
 
-[Owned Windows | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/winmsg/window-features#owned-windows)
-
-[MFC子窗口和父窗口（SetParent,SetOwner） - BeyondTechnology - 博客园](https://www.cnblogs.com/BeyondTechnology/archive/2011/03/25/1995934.html)
-
 [Nasty gotcha: Positioning your window beneath a topmost window makes it topmost | The Old New Thing](https://devblogs.microsoft.com/oldnewthing/20200101-00/?p=103285)
 
 ## [Foreground and background windows](Foreground.md)
 Each process can have multiple threads of execution, and each thread can create windows. The thread that created the window with which the user is currently working is called the foreground thread, and the window is called the **foreground window**. All other threads are background threads, and the windows created by background threads are called **background windows**.
+
+## Owned Windows
+[Owned Windows | Microsoft Docs](https://docs.microsoft.com/zh-cn/windows/win32/winmsg/window-features#owned-windows)
+
+[A window can have a parent or an owner but not both - The Old New Thing](https://devblogs.microsoft.com/oldnewthing/20100315-00/?p=14613)
+
+[MFC子窗口和父窗口（SetParent,SetOwner） - BeyondTechnology - 博客园](https://www.cnblogs.com/BeyondTechnology/archive/2011/03/25/1995934.html)
 
 ## Z-order
 [How do I create a topmost window that is never covered by other topmost windows? - The Old New Thing](https://devblogs.microsoft.com/oldnewthing/20110310-00/?p=11253)
