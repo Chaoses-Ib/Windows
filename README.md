@@ -80,6 +80,7 @@
   - [Remote](UI/GUI/Desktops/Remote.md)
 - [Windows](UI/GUI/Windows/README.md)
   - [Window Types](UI/GUI/Windows/Types/README.md)
+    - [Overlapped Windows](UI/GUI/Windows/Types/Overlapped.md)
     - [Child Windows](UI/GUI/Windows/Types/Child.md)
     - [Layered Windows](UI/GUI/Windows/Types/Layered.md)
   - [Window Classes](UI/GUI/Windows/Classes/README.md)

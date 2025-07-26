@@ -6,3 +6,6 @@
 3. Child Windows
 4. Layered Windows
 5. Message-Only Windows
+
+## MDI
+[c# - Slow winforms rendering when using MDI? - Stack Overflow](https://stackoverflow.com/questions/28287678/slow-winforms-rendering-when-using-mdi)
