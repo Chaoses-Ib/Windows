@@ -62,6 +62,9 @@ No_BeginPaint:
 
 [Why DispatchMessage() ?](https://comp.os.ms-windows.programmer.win32.narkive.com/onvrvxhN/why-dispatchmessage)
 
+[c++ - Missing mouse movement messages in Win32 - Stack Overflow](https://stackoverflow.com/questions/17512457/missing-mouse-movement-messages-in-win32)
+> `WM_MOUSEMOVE` is special in that it isn't queued; it's automatically generated as needed when the message queue is empty. (`WM_PAINT` and `WM_TIMER` behave the same way.)
+
 ## Multiple message queues
 [Multiple Threads in the User Interface | Microsoft Learn](https://learn.microsoft.com/en-us/previous-versions/ms810439(v=msdn.10)?redirectedfrom=MSDN)
 > Applications with multiple threads must include a message loop in each thread that creates a window. The message loop and window procedure for a window must be processed by the thread that created the window. If the message loop does not reside in the same thread that created the window, the **DispatchMessage** function will not get messages for the window. As a result, the window will appear but won't show activation and won't repaint, be moved, receive mouse messages, or generally work as you expect it to.

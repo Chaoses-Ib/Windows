@@ -90,6 +90,7 @@
   - [Message Queues](UI/GUI/Messages/Queues.md)
 - [Common Controls](UI/GUI/Controls/README.md)
   - [ImageList](UI/GUI/Controls/ImageList.md)
+  - [Static](UI/GUI/Controls/Static.md)
   - [Tooltip](UI/GUI/Controls/Tooltip.md)
 
 ### [Shell](UI/Shell/README.md)
