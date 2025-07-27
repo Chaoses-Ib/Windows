@@ -10,6 +10,9 @@
 
 [iDisplay, SpaceDesk? - PC Hardware and Related Software - ED Forums](https://forum.dcs.world/topic/165573-idisplay-spacedesk/)
 
+[求推荐个可以免安装直接受控的远程控制软件 - V2EX](https://www.v2ex.com/t/1124533)
+- RustDesk
+
 ## Remote Desktop Protocol (RDP)
 [Wikipedia](https://en.wikipedia.org/wiki/Remote_Desktop_Protocol)
 
@@ -170,8 +173,7 @@ Client:
 
 [RemoteApp 隔离国内 Windows 毒瘤应用运行方案 - LetITFly BBS](https://bbs.letitfly.me/d/1199)
 
-## RustDesk
-[GitHub](https://github.com/rustdesk/rustdesk)
+## [→RustDesk](RustDesk.md)
 
 ## Splashtop
 [远程支持、访问、协作-高性能远程桌面 | Splashtop](https://www.splashtop.com/cn/)
@@ -249,3 +251,9 @@ Data:
   - One monitor per viewer
   - Keep display on is off by default
 - Connection loss delay is 45 seconds by default
+
+## [网易UU远程](https://uuyc.163.com/)
+- 只有打洞成功才能连接？
+
+## ToDesk
+[ToDesk 真的是有大病，避雷了 - V2EX](https://www.v2ex.com/t/1139905)

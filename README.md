@@ -78,6 +78,7 @@
 ### GUI
 - [Desktops](UI/GUI/Desktops/README.md)
   - [Remote](UI/GUI/Desktops/Remote.md)
+    - [RustDesk](UI/GUI/Desktops/RustDesk.md)
 - [Windows](UI/GUI/Windows/README.md)
   - [Window Types](UI/GUI/Windows/Types/README.md)
     - [Overlapped Windows](UI/GUI/Windows/Types/Overlapped.md)
