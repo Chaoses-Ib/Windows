@@ -12,7 +12,7 @@
   - [Windows Portable Elevation -- Documentation for RustDesk](https://rustdesk.com/docs/en/client/windows/windows-portable-elevation/)
 
     No administrative privileges or installation needed for Windows, elevate privilege locally or from remote on demand.
-- https://gh-proxy.com/github.com/rustdesk/rustdesk/releases/download/1.4.0/rustdesk-1.4.0-x86_64.exe
+- https://gh-proxy.com/github.com/rustdesk/rustdesk/releases/download/1.4.1/rustdesk-1.4.1-x86_64.exe
 
 ## Server
 [rustdesk/rustdesk-server: RustDesk Server Program](https://github.com/rustdesk/rustdesk-server)
@@ -34,6 +34,55 @@
   ```
   - `/opt/rustdesk`
 - [sshpc/rustdesktool: rustdesk自建、自建向日葵&todesk](https://github.com/sshpc/rustdesktool)
+
+[Ports](https://rustdesk.com/docs/en/self-host/#how-does-self-hosted-server-work):
+- ID: 21115, 21116 (TCP/UDP)
+  - Pro: 21114/443
+  - WS: 21118
+- Relay: 21117
+  - WS: 21119
+
+```sh
+hbbs 1.1.14
+Purslane Ltd. <info@rustdesk.com>
+RustDesk ID/Rendezvous Server
+
+USAGE:
+    hbbs [OPTIONS]
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+OPTIONS:
+    -c, --config <FILE>                   Sets a custom config file
+    -k, --key <KEY>                       Only allow the client with the same key
+        --mask <MASK>                     Determine if the connection comes from LAN, e.g. 192.168.0.0/16
+    -p, --port <NUMBER(default=21116)>    Sets the listening port
+    -r, --relay-servers <HOST>            Sets the default relay servers, separated by comma
+    -R, --rendezvous-servers <HOSTS>      Sets rendezvous servers, separated by comma
+    -M, --rmem <NUMBER(default=0)>        Sets UDP recv buffer size, set system rmem_max first, e.g., sudo sysctl -w
+                                          net.core.rmem_max=52428800. vi /etc/sysctl.conf, net.core.rmem_max=52428800,
+                                          sudo sysctl –p
+    -s, --serial <NUMBER(default=0)>      Sets configure update serial number
+    -u, --software-url <URL>              Sets download url of RustDesk software of newest version
+```
+```sh
+hbbr 1.1.14
+Purslane Ltd. <info@rustdesk.com>
+RustDesk Relay Server
+
+USAGE:
+    hbbr [OPTIONS]
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+OPTIONS:
+    -k, --key <KEY>                       Only allow the client with the same key
+    -p, --port <NUMBER(default=21117)>    Sets the listening port
+```
 
 [Community consensus on Rustdesk with all the controversy in such a short time? : r/selfhosted](https://www.reddit.com/r/selfhosted/comments/14kjvkg/community_consensus_on_rustdesk_with_all_the/)
 > They are disallowing China peer from using their server. They also add another protection by disallow users connecting to peer not in same city(This apply to all users,no only in China). You need to setup your own pair server to bypass it.s
@@ -64,8 +113,21 @@
   [RustDesk 由于诈骗猖獗，暂停国内服务 - V2EX](https://v2ex.com/t/1038439)
 
 - Censorship
-  
-  2025-06 [自建 Rustdesk 服务 端口被阻断 - V2EX](https://v2ex.com/t/1136754)
+  - 部分地区的运营商会不定时阻断 RustDesk
+    - 即使代理 server IP 的 21115-21117 端口也会被阻断，可能是会识别握手或端口探测特征
+    - 本地转发不会被阻断，但要注意 relay server 是由 ID server 分发的
+
+  - > error: connect failed: dial tcp 1.2.3.4:21114: connectex: No connection could be made because the target machine actively refused it.
+
+    Unrelated?
+
+  Discussions:
+  - 2022-12 [在阿里云香港服务器用 docker 搭了个 rustdesk 服务, 今天突然就不能用了 - V2EX](https://www.v2ex.com/t/904686)
+  - 2024-06 [rustdesk 自建服务器连不上 - V2EX](https://www.v2ex.com/t/1050500)
+  - 2025-05 [之前华为云活动买了 56 块钱的服务器，部署了 rustdesk 真是爽爆了 - V2EX](https://www.v2ex.com/t/1132762)
+  - 2025-06 [自建 Rustdesk 服务 端口被阻断 - V2EX](https://v2ex.com/t/1136754)
+  - 2025-06 [【求助】自建rustdesk连接deadline has elapsed](https://www.nodeseek.com/post-372625-1)
+  - 2025-07 [RustDesk 自建中转服务器卡顿，疑是 UDP 打洞遭运营商限制 - V2EX](https://www.v2ex.com/t/1143224)
 
 ## API server
 - [lejianwen/rustdesk-api: Custom Rustdesk Api Server, include web admin ,web client, web client v2 preview and oidc login](https://github.com/lejianwen/rustdesk-api)
@@ -97,3 +159,9 @@
 - Use command line `--config`
 
 [rustdesk 的自建服务器问题请教 - V2EX](https://v2ex.com/t/1029489)
+
+- ID server config always have effect, but relay server may not
+
+  relay server 是由 ID server 分发的
+
+  [Rustdesk suddenly seems to ignore -r flag for some connections : r/rustdesk](https://www.reddit.com/r/rustdesk/comments/1gvsi1x/rustdesk_suddenly_seems_to_ignore_r_flag_for_some/)
