@@ -75,8 +75,10 @@ By default:
 > The default delay times are based on the double-click time. For the default double-click time of 500 ms, the initial, autopop, and reshow delay times are 500ms, 5000ms, and 100ms respectively.
 
 You can adjust all of the time-out durations by using the [`TTM_SETDELAYTIME`](https://learn.microsoft.com/en-us/windows/win32/controls/ttm-setdelaytime) message.
-- However, the maximum accepted duration is 65.535 seconds.
-- `SendMessage(hwnd, TTM_SETDELAYTIME, TTDT_AUTOPOP, 0xFFFF)`
+- However, the maximum accepted duration is 32.767 seconds.
+- `SendMessage(hwnd, TTM_SETDELAYTIME, TTDT_AUTOPOP, 0x7FFF)` (0x8000~0xFFFF is the same as -1)
+
+  [feat(win32): keep pop up tooltip - Chaoses-Ib/winio@21f5995](https://github.com/Chaoses-Ib/winio/commit/21f59956be78561ab15850e78faf521d7233dce0)
 
 ## Multiline tooltips
 [How to Implement Multiline Tooltips - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/controls/implement-multiline-tooltips)
