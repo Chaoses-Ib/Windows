@@ -18,7 +18,7 @@ Approaches[^inject-wiki]:
 - IME
 - [DLL hijacking](Search.md#dll-hijacking)
 - [COM hijacking](../../../Applications/API/COM/README.md#hijacking)
-- `SetWinEventHook()`
+- [`SetWinEventHook()`](../../../UI/GUI/Hooks/README.md#winevent-hooks)
   
   > In our tests (with Windows 10 version 1903), we could not force the DLL to load at the target process, and all events were handled in out-of-context fashion. The [documentation](https://docs.microsoft.com/en-us/windows/desktop/api/Winuser/nf-winuser-setwineventhook) does mention that “in some situations, even if you request WINEVENT_INCONTEXT events, the events will still be delivered out-of-context“, so perhaps Microsoft moved all events to our-of-context mode in recent Windows versions.[^inject-2019]
 - AppCertDLLs

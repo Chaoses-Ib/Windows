@@ -7,7 +7,7 @@
 - [Chekced Build](Windows/Chekced.md)
 
 ## Kernel
-- Traps
+- [Traps](Kernel/Traps/README.md)
   - [Asynchronous Procedure Calls](Kernel/Traps/Asynchronous%20Procedure%20Calls.md)
 - [Objects](Kernel/Objects/README.md)
 - [Processes](Kernel/Processes/README.md)
@@ -90,6 +90,7 @@
     - [Foreground Windows](UI/GUI/Windows/Relationships/Foreground.md)
 - Messages
   - [Message Queues](UI/GUI/Messages/Queues.md)
+- [Hooks](UI/GUI/Hooks/README.md)
 - [Common Controls](UI/GUI/Controls/README.md)
   - [ImageList](UI/GUI/Controls/ImageList.md)
   - [Static](UI/GUI/Controls/Static.md)
