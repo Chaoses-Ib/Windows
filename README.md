@@ -18,6 +18,8 @@
   - [Console](Kernel/Processes/Console/README.md)
   - [Dumps](Kernel/Processes/Dumps.md)
 - Threads
+  - Scheduling
+    - [Thread Priority](Kernel/Threads/Scheduling/Priority.md)
   - [Synchronization](Kernel/Threads/Sync/README.md)
     - [Events](Kernel/Threads/Sync/Events.md)
 - [→Memory Management](https://github.com/Chaoses-Ib/InformationSystems#memory-management)

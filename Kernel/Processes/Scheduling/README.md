@@ -1,4 +1,6 @@
 # Scheduling
+## [→Thread Priority](../../Threads/Scheduling/Priority.md)
+
 ## CPU usage
 [c# calculate CPU usage for a specific application - Stack Overflow](https://stackoverflow.com/questions/1277556/c-sharp-calculate-cpu-usage-for-a-specific-application)
 - `Process.TotalProcessorTime`
