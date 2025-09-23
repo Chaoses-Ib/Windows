@@ -9,6 +9,8 @@ Kernels: Linux, FreeBSD, ReactOS, macOS, Android
 
 [WineHQ - Wine Application Database](https://appdb.winehq.org/)
 
+[qarmin/Win32Fuzzer: Winapi fuzzer to help Wine project in creating better Windows "emulator"](https://github.com/qarmin/Win32Fuzzer)
+
 ## Versions
 - CrossOver
 - [ValveSoftware/wine: Wine with a bit of extra spice](https://github.com/ValveSoftware/wine)

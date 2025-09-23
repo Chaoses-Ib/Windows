@@ -45,6 +45,9 @@
 
 ### [Virtualization](Kernel/Virtualization/README.md)
 - [→Hyper-V](https://github.com/Chaoses-Ib/ComputerHardware/blob/main/Virtualization/Native/Hyper-V/README.md)
+- [→Linux virtualization](https://github.com/Chaoses-Ib/Linux#virtualization) + [Wine](Subsystems/Wine/README.md)
+- [App-V](Kernel/Virtualization/App-V.md)
+- [AppContainer](Kernel/Virtualization/AppContainer/README.md)
 - [Sandboxie](Kernel/Virtualization/Sandboxie.md)
 
 ## [Subsystems](Subsystems/README.md)
