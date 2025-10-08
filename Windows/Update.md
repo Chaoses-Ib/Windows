@@ -24,6 +24,28 @@
 
 [How do I stop windows from f\*\*king up my drivers every few weeks? : r/pcmasterrace](https://www.reddit.com/r/pcmasterrace/comments/12ggm4t/how_do_i_stop_windows_from_fking_up_my_drivers/)
 
+## Automatic updates
+- Configure Automatic Updates
+
+  > Run `gpedit.msc`, this will launch the group policy editor. Browse to Computer configuration -> Administrative Templates -> All Settings, then sort the name alphabetically, look for and double click on *Configure Automatic Updates*. In the window that opens, select *Enabled*, then in the dropdown below select option *2 - Notify for download and auto install*. This will still allow everything related to Windows Update to work normally, it will still periodically check for updates but it won't download them until you allow them. You will get a notification that you have updates available, and then you can run it when it works best for you.
+
+  - Disabled (1)
+  
+    > If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
+  
+    Also disables get updates for other Microsoft products.
+
+- Pause updates
+  - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings\FlightSettingsMaxPauseDays`
+
+    > Change it to a DECIMAL (IMPORTANT) value that is a multiple of 7 for the amount of days you want to pause updates for. Do it for 10 years.
+    - 3650 (0xe42).
+    - May be reset to 7?
+
+  [Pause your updates until 2033 on Windows | GRC Public Forums](https://forums.grc.com/threads/pause-your-updates-until-2033-on-windows.1717/)
+
+[Is there a way to truly pause updates? : r/WindowsHelp](https://www.reddit.com/r/WindowsHelp/comments/1bl5gor/is_there_a_way_to_truly_pause_updates/)
+
 ## Tools
 - [Reset Windows Update Tool: Troubleshooting Tool with Windows Updates (Developed in Dev-C++).](https://github.com/ManuelGil/Reset-Windows-Update-Tool) (discontinued)
 
