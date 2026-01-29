@@ -1,3 +1,5 @@
+#import "@local/ib:0.1.0": *
+#md(`
 # [Wine](https://www.winehq.org/)
 [Wikipedia](https://en.wikipedia.org/wiki/Wine_(software)), [GitHub](https://github.com/wine-mirror/wine)
 
@@ -29,10 +31,12 @@ Kernels: Linux, FreeBSD, ReactOS, macOS, Android
 
 ## Linux
 [Debian/Ubuntu - Wiki - wine / wine - GitLab](https://gitlab.winehq.org/wine/wine/-/wikis/Debian-Ubuntu)
+`)
 - `sudo dpkg --add-architecture i386` is not optional
 
 2 GiB
 
+#md(````
 ### WSL2
 ~~Note that WSL will take precedence over Wine. One must use `wine a.exe` to run the program.~~
 
@@ -103,3 +107,4 @@ FILE_ALLOCATION_INFO failed!!!
 - `winedbg --command "info proc"`
 
   [process - How to list wine processes on the terminal screen? - Stack Overflow](https://stackoverflow.com/questions/41227121/how-to-list-wine-processes-on-the-terminal-screen)
+````)

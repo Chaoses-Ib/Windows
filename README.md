@@ -45,14 +45,14 @@
 
 ### [Virtualization](Kernel/Virtualization/README.md)
 - [→Hyper-V](https://github.com/Chaoses-Ib/ComputerHardware/blob/main/Virtualization/Native/Hyper-V/README.md)
-- [→Linux virtualization](https://github.com/Chaoses-Ib/Linux#virtualization) + [Wine](Subsystems/Wine/README.md)
+- [→Linux virtualization](https://github.com/Chaoses-Ib/Linux#virtualization) + [Wine](Subsystems/Wine/README.typ)
 - [App-V](Kernel/Virtualization/App-V.md)
 - [AppContainer](Kernel/Virtualization/AppContainer/README.md)
 - [Sandboxie](Kernel/Virtualization/Sandboxie.md)
 
 ## [Subsystems](Subsystems/README.md)
 - [Ntdll.dll](Subsystems/Ntdll.dll.md)
-- [Wine](Subsystems/Wine/README.md)
+- [Wine](Subsystems/Wine/README.typ)
 
 ### [Windows](Subsystems/Windows/README.md)
 - [Windows 32-bit on Windows 64-bit (WoW64)](Subsystems/Windows/WoW64.md)
