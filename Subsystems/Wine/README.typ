@@ -14,6 +14,23 @@ Kernels: Linux, FreeBSD, ReactOS, macOS, Android
 [qarmin/Win32Fuzzer: Winapi fuzzer to help Wine project in creating better Windows "emulator"](https://github.com/qarmin/Win32Fuzzer)
 
 ## Versions
+`)
+- #t[260113]
+  #a[Wine 11.0][https://gitlab.winehq.org/wine/wine/-/releases/wine-11.0]
+  - WoW64
+  - NTSync
+  - NT Reparse Points
+  - Write Watches
+  - #q[NT system calls use the same syscall numbering as recent Windows, to support applications that hardcode syscall numbers.]
+
+    #a[\> NT system calls... | Hacker News][https://news.ycombinator.com/item?id=46673245]
+  - #q[NT system calls can be traced with ```sh WINEDEBUG=syscall```.
+    Unlike ```sh WINEDEBUG=relay```, this is transparent to the application, and avoids breaking applications that hook system call entry points.]
+
+  #a[开源兼容层 Wine 11.0 发布：WoW64 架构开发完工，玩游戏更流畅了 - IT之家][https://www.ithome.com/0/913/149.htm]
+
+= Forks
+#md(`
 - CrossOver
 - [ValveSoftware/wine: Wine with a bit of extra spice](https://github.com/ValveSoftware/wine)
   - [Proton](https://github.com/ValveSoftware/Proton) ([Wikipedia](https://github.com/ValveSoftware/Proton))
@@ -33,6 +50,31 @@ Kernels: Linux, FreeBSD, ReactOS, macOS, Android
 [Debian/Ubuntu - Wiki - wine / wine - GitLab](https://gitlab.winehq.org/wine/wine/-/wikis/Debian-Ubuntu)
 `)
 - `sudo dpkg --add-architecture i386` is not optional
+- Branches
+
+  #a[Change branch? - WineHQ Forums][https://forum.winehq.org/viewtopic.php?t=36992]
+- Old versions
+
+  ```sh
+  apt policy winehq-stable
+  sudo apt install --install-recommends winehq-stable=10.0.0.0~trixie-1 wine-stable=10.0.0.0~trixie-1 wine-stable-amd64=10.0.0.0~trixie-1 wine-stable-i386:i386=10.0.0.0~trixie-1
+  ```
+  #footnote[#a[How to install an older version of wine - WineHQ Forums][https://forum.winehq.org/viewtopic.php?t=34810]]
+- Binary size
+  - `--no-install-recommends`: 2.85 $arrow$ 2.04 GB
+
+  #a[Standalone Wine for console Win32 executables - WineHQ Forums][https://forum.winehq.org/viewtopic.php?t=11855]
+
+  #a[Install wine (or wineconsole) without GUI - WineHQ Forums][https://forum.winehq.org/viewtopic.php?t=36685]
+
+  #a[Wine without a GUI ??? | Einstein\@Home][https://einsteinathome.org/content/wine-without-gui]
+
+  #a[64-bit-only wine (or preferably wine-staging) / AUR Issues, Discussion & PKGBUILD Requests / Arch Linux Forums][https://bbs.archlinux.org/viewtopic.php?id=225552]
+- China mirrors
+  - #a[wine-builds | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror][https://mirrors.tuna.tsinghua.edu.cn/help/wine-builds/]
+    ```sh
+    deb [arch=amd64,i386 signed-by=/usr/share/keyrings/winehq-archive.key] https://mirrors.tuna.tsinghua.edu.cn/wine-builds/debian/ trixie main
+    ```
 
 2 GiB
 
@@ -91,6 +133,19 @@ Headless:
 
 2024-11-06 [ntdll: Add SIGSYS handler to support syscall emulation on macOS Sonoma and later. (!6777) - Merge requests - wine / wine - GitLab](https://gitlab.winehq.org/wine/wine/-/merge_requests/6777)
 
+````)
+
+Wine 11.0:
+- #q[NT system calls use the same syscall numbering as recent Windows, to support applications that hardcode syscall numbers.]
+
+  #a[\> NT system calls... | Hacker News][https://news.ycombinator.com/item?id=46673245]
+- #q[NT system calls can be traced with ```sh WINEDEBUG=syscall```.
+  Unlike ```sh WINEDEBUG=relay```, this is transparent to the application, and avoids breaking applications that hook system call entry points.]
+
+#a[Upgraded to VMProtect Ultimate 3.5.1 from Ultimate 3.1.1, now app doesn't work under WINE - VMProtect Software » Forum][https://vmpsoft.com/forum/viewtopic.php?p=31280&hilit=wine&sid=36e134f2dc7e8d4bd12ad46230d74d67#p31280]
+- #a[VMProtect Heaven's Gate Anti-Debug Bypass to VectorHandler - Page 4 - Reverse Engineering Articles - Tuts 4 You][https://forum.tuts4you.com/topic/44425-vmprotect-heavens-gate-anti-debug-bypass-to-vectorhandler/page/4/]
+
+#md(````
 ## Rust
 ~~[Regression: `File::open` not falling back to `FileEndOfFileInfo` on WINE - Issue #135831 - rust-lang/rust](https://github.com/rust-lang/rust/issues/135831)~~
 ```rust
@@ -108,3 +163,8 @@ FILE_ALLOCATION_INFO failed!!!
 
   [process - How to list wine processes on the terminal screen? - Stack Overflow](https://stackoverflow.com/questions/41227121/how-to-list-wine-processes-on-the-terminal-screen)
 ````)
+- `wine taskkill /im process.exe /f /t`
+
+  #a[getpid and killing single Wine processes - WineHQ Forums][https://forum.winehq.org/viewtopic.php?t=34300]
+
+#a[Debugging Wine - Wiki - wine / wine - GitLab][https://gitlab.winehq.org/wine/wine/-/wikis/Wine-Developer's-Guide/Debugging-Wine]
