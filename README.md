@@ -54,6 +54,7 @@
 - [Ntdll.dll](Subsystems/Ntdll.dll.md)
 - [Wine](Subsystems/Wine/README.typ)
   - [Debugging](Subsystems/Wine/Debug.typ)
+  - [Performance](Subsystems/Wine/Performance.typ)
 
 ### [Windows](Subsystems/Windows/README.md)
 - [Windows 32-bit on Windows 64-bit (WoW64)](Subsystems/Windows/WoW64.md)
