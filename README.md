@@ -1,6 +1,7 @@
 # [Windows](Windows.md)
 - [Versions](Windows/Versions.md)
-- [Deployment](Windows/Deployment.md)
+- [Deployment](Windows/Deployment/README.md)
+  - [Virtual Machines (VM)](Windows/Deployment/VM.typ)
 - [Minimal Windows](Windows/Minimal/README.typ)
 - [Windows Update](Windows/Update.md)
 - [Windows Insider](Windows/Insider.md)

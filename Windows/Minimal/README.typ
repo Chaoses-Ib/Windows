@@ -1,9 +1,14 @@
 #import "@local/ib:0.1.0": *
 #title[Minimal Windows]
+#a-badge[https://en.wikipedia.org/wiki/MinWin]
+
 #let mib(mb) = [#mb MiB (#(mb/1024) GiB)]
 
 - Memory: 0.25 GB is fairly enough for running,
   #mib(296) is enough for boot.
+  #footnote[#a[Hardware Requirements for Windows Server | Microsoft Learn][https://learn.microsoft.com/en-us/windows-server/get-started/hardware-requirements?tabs=ram&pivots=windows-server-2019]]
+  #footnote[#a[New windows 2022 server so laggy, why? : r/AZURE][https://www.reddit.com/r/AZURE/comments/18x1x4h/new_windows_2022_server_so_laggy_why/]]
+  #footnote[#a[memory - Windows 2012 R2 Server Core reduced/minimum RAM usage (for VMs) - Super User][https://superuser.com/questions/941319/windows-2012-r2-server-core-reduced-minimum-ram-usage-for-vms]]
   - For boot, at least #mib(288) is needed, #mib(272) is not enough:
 
     `Status: 0xc00000177 Info: There isn't enough memory available to create a ramdisk device.`
@@ -13,6 +18,8 @@
 
 = Components
 - Windows Server Core
+  #footnote[#a[Linux Admin Confused About Windows Server Core : r/sysadmin][https://www.reddit.com/r/sysadmin/comments/jkc716/linux_admin_confused_about_windows_server_core/]]
+  #footnote[#a[Windows Server 2012 Core vs GUI performance impact : r/sysadmin][https://www.reddit.com/r/sysadmin/comments/3x0fc7/windows_server_2012_core_vs_gui_performance_impact/]]
   - Memory
     - 2019: 600 MB (800 MB of normal version)
       
@@ -89,3 +96,6 @@
     - ```cmd wmic pagefile list /format:list```
 
 #a[Optimizing Windows Server 2022 memory consumption on VPS with limited RAM | 3v-Hosting][https://3v-host.com/blog/optimizing-windows-server-2022-memory-consumption-on-vps/]
+
+= Tools
+- #a[ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.][https://github.com/ntdevlabs/tiny11builder]

@@ -1,5 +1,5 @@
 # Deployment
-[→Versions](Versions.md)
+[→Versions](../Versions.md)
 - Editions
 
 ## Images
@@ -41,6 +41,6 @@ Tools:
 
 [Install windows in a partition without OS, without formatting it - Super User](https://superuser.com/questions/910080/install-windows-in-a-partition-without-os-without-formatting-it)
 
-## [→Users](../Kernel/Users/README.md#installation)
+## [→Users](../../Kernel/Users/README.md#installation)
 
-## [→Licensing](../Kernel/Security/Licensing.md#windows)
+## [→Licensing](../../Kernel/Security/Licensing.md#windows)
