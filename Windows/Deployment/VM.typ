@@ -39,6 +39,10 @@ Vagrant:
 
 - Images/Versions
   - Will re-download the ISO image every time.
+    #footnote[#a[[Feature]: Keep original isos - Issue \#1268 - dockur/windows][https://github.com/dockur/windows/issues/1268]]
+    - `REMOVE=N`
+  - Custom ISO: `-v "my.iso:/boot.iso"`
+  - `/storage/windows.*.iso` will be deleted after the first successful boot.
   - Server Core: ```sh -e "VERSION=2019" -e "EDITION=CORE"```
     #footnote[#a[\[Feature\]: What about support for Windows Nano Server or Windows Server Core - Issue \#556 - dockur/windows][https://github.com/dockur/windows/issues/556]]
     #footnote[#a[\[Feature\]: Flag to install Windows Server Core. Windows Server without desktop. - Issue \#1030 - dockur/windows][https://github.com/dockur/windows/issues/1030]]

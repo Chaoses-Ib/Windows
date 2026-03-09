@@ -14,6 +14,15 @@
     `Status: 0xc00000177 Info: There isn't enough memory available to create a ramdisk device.`
 
     And even 288 MiB may hang on LogonUI, where #mib(296) works.
+  - For installation, 1 GiB is not enough
+    #footnote[#a[Hardware Requirements for Windows Server | Microsoft Learn][https://learn.microsoft.com/en-us/windows-server/get-started/hardware-requirements?tabs=ram&pivots=windows-server-2019]]
+    but 2 GiB.
+
+    `Windows cannot find the Microsoft Software License Terms.`
+    #footnote[#a[VM安装 英文版 windows Server 2019报错：windows找不到microsoft软件许可条款。请确保安装源有效,然后重新启动安装"已解决\_windows找不到microsoft软件许可条款,请确保安装 - CSDN博客][https://blog.csdn.net/z09364517158/article/details/129833974]]
+    #footnote[#a[Windows can't find the microsoft software license terms : r/techsupport][https://www.reddit.com/r/techsupport/comments/vo6xta/windows_cant_find_the_microsoft_software_license/]]
+    #footnote[#a[PD windows 找不到 microsoft 软件许可条款 - V2EX][https://v2ex.com/t/225350]]
+
 - Disk: Less than 7 GB.
 
 = Components
@@ -41,6 +50,7 @@
 
   - Disk:
     - 2019: 6.82 GB
+      (Standard: 10.7 GB)
 
 - Microsoft Defender
   - Memory: 170\~200 MB
@@ -70,6 +80,11 @@
   #footnote[#a[TIL You can RDP into Windows Server Core : r/sysadmin][https://www.reddit.com/r/sysadmin/comments/7udfb1/til_you_can_rdp_into_windows_server_core/]]
   - Memory: \~1.5 MB, 40 MB when active.
   - Use VNC (or Windows Admin Center) instead.
+  - Desktop Background: Solid color
+
+- Service: .NET Runtime Optimization Service (`mscorsvw.exe`)
+  #footnote[#a[windows 10 - How to prevent .NET Runtime Optimization Service from running on battery? - Super User][https://superuser.com/questions/1250155/how-to-prevent-net-runtime-optimization-service-from-running-on-battery]]
+  - Windows Server Core
 
 - Task Manager: 4 MB
 
@@ -99,3 +114,6 @@
 
 = Tools
 - #a[ntdevlabs/tiny11builder: Scripts to build a trimmed-down Windows 11 image.][https://github.com/ntdevlabs/tiny11builder]
+
+= Versions
+- #a[xb21cn WinServer 2019 1809 17763.5936 -- Windows Server 2019精简版-个人笔记][https://www.8uid.com/3777/]
